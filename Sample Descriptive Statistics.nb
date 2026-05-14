@@ -1,0 +1,2462 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    116632,       2454]
+NotebookOptionsPosition[     99703,       2151]
+NotebookOutlinePosition[    100139,       2168]
+CellTagsIndexPosition[    100096,       2165]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Sample Description", "Title",
+ CellChangeTimes->{{3.867678027928515*^9, 
+  3.8676780597691927`*^9}},ExpressionUUID->"0ff1cef8-cfcb-429b-90ff-\
+e5d5ea8416c2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CrossSectionalData", " ", "=", " ", 
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = False}, 
+     TemplateBox[{"Expression", 
+       StyleBox[
+       "\"Cross-Sectional Data\"", "IconizedCustomName", StripOnInput -> 
+        False], 
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Head: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            TagBox["Dataset", "IconizedItem"]}]}, {
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            
+            TagBox["260928", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+       Dynamic[Typeset`open]},
+      "IconizedObject"]],
+    Dataset[{
+      Association[
+      "SPAC Name" -> "JWC Acquisition Corp.", "deSPAC Name" -> 
+       "The Tile Shop", "IPODate" -> "23.11.10", "AnnouncementDate" -> 
+       "27.06.12", "AcquisitionDeadlineDate" -> "23.08.12", "MergerVoteDate" -> 
+       "16.08.12", "IPOYear" -> 2010, "AcquisitionYear" -> 2012, 
+       "AnnouncementTiming" -> 57, "DaysToAnnouncement" -> 582, 
+       "preVoteShareOverCash" -> -0.69, "OneYearPerformance" -> 1.350684856, 
+       "OneYearAR" -> 1.083311834, "IPOSize" -> 125, "extraCashInTrust" -> 0, 
+       "SponsorOwnership" -> 0.157681941, "WarrantsOverPublicShares" -> 1.427,
+        "Rights" -> 0, "SPACPeriodReturn" -> -0.079, 
+       "SPACPeriodAR" -> -0.222630542, "IPOtoDeSPACReturn" -> 1.373148, 
+       "IPOtoDeSPACAR" -> 0.895419923, "TargetSize" -> 500, "TargetROA" -> 
+       0.287997061, "TargetDebtRatio" -> 0.36854754, "Manufacturing" -> 0, 
+       "ConsumerAndServices" -> 1, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "RLJ Acquisition Corp.", "deSPAC Name" -> 
+       "RLJ Entertainment", "IPODate" -> "22.02.11", "AnnouncementDate" -> 
+       "02.05.12", "AcquisitionDeadlineDate" -> "22.11.12", "MergerVoteDate" -> 
+       "20.09.12", "IPOYear" -> 2011, "AcquisitionYear" -> 2012, 
+       "AnnouncementTiming" -> 204, "DaysToAnnouncement" -> 435, 
+       "preVoteShareOverCash" -> 0, "OneYearPerformance" -> 0.744399185, 
+       "OneYearAR" -> 0.485886608, "IPOSize" -> 143.8, 
+       "extraCashInTrust" -> -0.05, "SponsorOwnership" -> 0.20001113, 
+       "WarrantsOverPublicShares" -> 1.464, "Rights" -> 0, 
+       "SPACPeriodReturn" -> -0.004, "SPACPeriodAR" -> -0.080704882, 
+       "IPOtoDeSPACReturn" -> 0.713, "IPOtoDeSPACAR" -> 0.375608571, 
+       "TargetSize" -> 194, "TargetROA" -> 0.001193835, "TargetDebtRatio" -> 
+       0.824641546, "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Andina Acquisition Corporation", "deSPAC Name" -> 
+       "Tecnoglass Inc.", "IPODate" -> "22.03.12", "AnnouncementDate" -> 
+       "19.08.13", "AcquisitionDeadlineDate" -> "22.12.13", "MergerVoteDate" -> 
+       "20.12.13", "IPOYear" -> 2012, "AcquisitionYear" -> 2013, 
+       "AnnouncementTiming" -> 125, "DaysToAnnouncement" -> 515, 
+       "preVoteShareOverCash" -> 0.08, "OneYearPerformance" -> 0.089077413, 
+       "OneYearAR" -> 0.036392949, "IPOSize" -> 42, "extraCashInTrust" -> 
+       0.18, "SponsorOwnership" -> 0.214953271, "WarrantsOverPublicShares" -> 
+       2.143, "Rights" -> 0, "SPACPeriodReturn" -> 0.019, 
+       "SPACPeriodAR" -> -0.395424972, "IPOtoDeSPACReturn" -> 0.027, 
+       "IPOtoDeSPACAR" -> -0.492942611, "TargetSize" -> 243, "TargetROA" -> 
+       0.014335265, "TargetDebtRatio" -> 0.703471913, "Manufacturing" -> 1, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Capitol Acquisition Corporation II", "deSPAC Name" -> 
+       "Lindblad Expeditions Holdings, Inc.", "IPODate" -> "09.05.13", 
+       "AnnouncementDate" -> "10.03.15", "AcquisitionDeadlineDate" -> 
+       "09.05.15", "MergerVoteDate" -> "01.07.15", "IPOYear" -> 2013, 
+       "AcquisitionYear" -> 2015, "AnnouncementTiming" -> 60, 
+       "DaysToAnnouncement" -> 670, "preVoteShareOverCash" -> 0.55, 
+       "OneYearPerformance" -> -0.073263559, "OneYearAR" -> -0.014132455, 
+       "IPOSize" -> 200, "extraCashInTrust" -> 0, "SponsorOwnership" -> 
+       0.301310044, "WarrantsOverPublicShares" -> 0.444, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.068, "SPACPeriodAR" -> -0.259543703, 
+       "IPOtoDeSPACReturn" -> -0.026, "IPOtoDeSPACAR" -> -0.276705568, 
+       "TargetSize" -> 440, "TargetROA" -> 0.10745166, "TargetDebtRatio" -> 
+       0.725253117, "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Quinpario Acquisition Corporation", "deSPAC Name" -> 
+       "Jason Industries, Inc.", "IPODate" -> "14.08.13", "AnnouncementDate" -> 
+       "17.03.14", "AcquisitionDeadlineDate" -> "14.12.14", "MergerVoteDate" -> 
+       "30.06.14", "IPOYear" -> 2013, "AcquisitionYear" -> 2014, 
+       "AnnouncementTiming" -> 215, "DaysToAnnouncement" -> 215, 
+       "preVoteShareOverCash" -> 0.26, "OneYearPerformance" -> -0.383410138, 
+       "OneYearAR" -> -0.438836029, "IPOSize" -> 172.5, "extraCashInTrust" -> 
+       0.26, "SponsorOwnership" -> 0.269325793, "WarrantsOverPublicShares" -> 
+       1.065, "Rights" -> 0, "SPACPeriodReturn" -> 0.049, 
+       "SPACPeriodAR" -> -0.091199918, "IPOtoDeSPACReturn" -> -0.331, 
+       "IPOtoDeSPACAR" -> -0.560299258, "TargetSize" -> 539, "TargetROA" -> 
+       0.055842765, "TargetDebtRatio" -> 0.927255879, "Manufacturing" -> 1, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Levy Acquisition Corporation", "deSPAC Name" -> 
+       "Del Taco Restaurants, Inc.", "IPODate" -> "19.11.13", 
+       "AnnouncementDate" -> "12.03.15", "AcquisitionDeadlineDate" -> 
+       "19.11.15", "MergerVoteDate" -> "30.06.15", "IPOYear" -> 2013, 
+       "AcquisitionYear" -> 2015, "AnnouncementTiming" -> 252, 
+       "DaysToAnnouncement" -> 478, "preVoteShareOverCash" -> 4.86, 
+       "OneYearPerformance" -> -0.415759129, "OneYearAR" -> -0.350548602, 
+       "IPOSize" -> 150, "extraCashInTrust" -> 0, "SponsorOwnership" -> 0.2, 
+       "WarrantsOverPublicShares" -> 0.408, "Rights" -> 0, "SPACPeriodReturn" -> 
+       0.503, "SPACPeriodAR" -> 0.316003158, "IPOtoDeSPACReturn" -> -0.088, 
+       "IPOtoDeSPACAR" -> -0.177479588, "TargetSize" -> 500, 
+       "TargetROA" -> -0.016623708, "TargetDebtRatio" -> 0.852001876, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Boulevard Acquisition Corporation", "deSPAC Name" -> 
+       "AgroFresh Solutions, Inc.", "IPODate" -> "19.02.14", 
+       "AnnouncementDate" -> "30.04.15", "AcquisitionDeadlineDate" -> 
+       "19.02.16", "MergerVoteDate" -> "29.07.15", "IPOYear" -> 2014, 
+       "AcquisitionYear" -> 2015, "AnnouncementTiming" -> 295, 
+       "DaysToAnnouncement" -> 435, "preVoteShareOverCash" -> 1.87, 
+       "OneYearPerformance" -> -0.456613311, "OneYearAR" -> -0.461993683, 
+       "IPOSize" -> 220.5, "extraCashInTrust" -> 0, "SponsorOwnership" -> 
+       0.214953271, "WarrantsOverPublicShares" -> 0.513, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.185, "SPACPeriodAR" -> 0.107828994, 
+       "IPOtoDeSPACReturn" -> -0.355, "IPOtoDeSPACAR" -> -0.453671197, 
+       "TargetSize" -> 880, "TargetROA" -> -4.684309296, "TargetDebtRatio" -> 
+       0.036364129, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "WL Ross Holding Corporation", "deSPAC Name" -> 
+       "Nexeo Solutions, Inc.", "IPODate" -> "11.06.14", "AnnouncementDate" -> 
+       "21.03.16", "AcquisitionDeadlineDate" -> "11.06.16", "MergerVoteDate" -> 
+       "08.06.16", "IPOYear" -> 2014, "AcquisitionYear" -> 2016, 
+       "AnnouncementTiming" -> 82, "DaysToAnnouncement" -> 649, 
+       "preVoteShareOverCash" -> -0.04, "OneYearPerformance" -> -0.068595927, 
+       "OneYearAR" -> -0.289406226, "IPOSize" -> 500.3, "extraCashInTrust" -> 
+       0.01, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.635, 
+       "Rights" -> 0, "SPACPeriodReturn" -> -0.009, 
+       "SPACPeriodAR" -> -0.045923916, "IPOtoDeSPACReturn" -> -0.131, 
+       "IPOtoDeSPACAR" -> -0.401769918, "TargetSize" -> 1580, "TargetROA" -> 
+       0.010703043, "TargetDebtRatio" -> 0.83410943, "Manufacturing" -> 0, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 1], 
+      Association[
+      "SPAC Name" -> "1347 Capital Corporation", "deSPAC Name" -> 
+       "Limbach Holdings, Inc.", "IPODate" -> "21.07.14", "AnnouncementDate" -> 
+       "23.03.16", "AcquisitionDeadlineDate" -> "21.07.16", "MergerVoteDate" -> 
+       "29.06.16", "IPOYear" -> 2014, "AcquisitionYear" -> 2016, 
+       "AnnouncementTiming" -> 120, "DaysToAnnouncement" -> 611, 
+       "preVoteShareOverCash" -> -0.91, "OneYearPerformance" -> 0.294816415, 
+       "OneYearAR" -> 0.048810229, "IPOSize" -> 46, "extraCashInTrust" -> 0, 
+       "SponsorOwnership" -> 0.2266308, "WarrantsOverPublicShares" -> 5.215, 
+       "Rights" -> 1, "SPACPeriodReturn" -> -0.014, "SPACPeriodAR" -> 
+       0.009649969, "IPOtoDeSPACReturn" -> 0.199, 
+       "IPOtoDeSPACAR" -> -0.088028517, "TargetSize" -> 97, "TargetROA" -> 
+       0.040010982, "TargetDebtRatio" -> 0.93552922, "Manufacturing" -> 1, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Terrapin 3 Acquisition Corporation", "deSPAC Name" -> 
+       "Yatra USA Corp.", "IPODate" -> "22.07.14", "AnnouncementDate" -> 
+       "13.07.16", "AcquisitionDeadlineDate" -> "22.07.16", "MergerVoteDate" -> 
+       "12.12.16", "IPOYear" -> 2014, "AcquisitionYear" -> 2016, 
+       "AnnouncementTiming" -> 9, "DaysToAnnouncement" -> 722, 
+       "preVoteShareOverCash" -> -0.01, "OneYearPerformance" -> -0.177419355, 
+       "OneYearAR" -> -0.301983288, "IPOSize" -> 212.8, "extraCashInTrust" -> 
+       0, "SponsorOwnership" -> 0.199962404, "WarrantsOverPublicShares" -> 
+       0.769, "Rights" -> 0, "SPACPeriodReturn" -> 0, 
+       "SPACPeriodAR" -> -0.240296775, "IPOtoDeSPACReturn" -> -0.184, 
+       "IPOtoDeSPACAR" -> -0.566213821, "TargetSize" -> 218, 
+       "TargetROA" -> -0.264102564, "TargetDebtRatio" -> 0.917614411, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 1, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "DT Asia Investments Limited", "deSPAC Name" -> 
+       "China Lending Corp.", "IPODate" -> "06.10.14", "AnnouncementDate" -> 
+       "11.01.16", "AcquisitionDeadlineDate" -> "06.04.16", "MergerVoteDate" -> 
+       "05.07.16", "IPOYear" -> 2014, "AcquisitionYear" -> 2016, 
+       "AnnouncementTiming" -> 86, "DaysToAnnouncement" -> 462, 
+       "preVoteShareOverCash" -> -1.7, "OneYearPerformance" -> -0.029673488, 
+       "OneYearAR" -> -0.267711362, "IPOSize" -> 68.6, "extraCashInTrust" -> 
+       0.26, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.655, 
+       "Rights" -> 1, "SPACPeriodReturn" -> -0.167, 
+       "SPACPeriodAR" -> -0.25036426, "IPOtoDeSPACReturn" -> -0.549, 
+       "IPOtoDeSPACAR" -> -0.879532996, "TargetSize" -> 193, "TargetROA" -> 
+       0.106295686, "TargetDebtRatio" -> 0.321496554, "Manufacturing" -> 0, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 1, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Hydra Industries Acquisition Corporation", 
+       "deSPAC Name" -> "Inspired Entertainment, Inc.", "IPODate" -> 
+       "29.10.14", "AnnouncementDate" -> "14.07.16", 
+       "AcquisitionDeadlineDate" -> "29.10.16", "MergerVoteDate" -> 
+       "13.12.16", "IPOYear" -> 2014, "AcquisitionYear" -> 2016, 
+       "AnnouncementTiming" -> 107, "DaysToAnnouncement" -> 624, 
+       "preVoteShareOverCash" -> -0.15, "OneYearPerformance" -> -0.085, 
+       "OneYearAR" -> -0.21117447, "IPOSize" -> 80, "extraCashInTrust" -> 
+       0.05, "SponsorOwnership" -> 0.8, "WarrantsOverPublicShares" -> 3.875, 
+       "Rights" -> 1, "SPACPeriodReturn" -> 0.005, 
+       "SPACPeriodAR" -> -0.243163067, "IPOtoDeSPACReturn" -> -0.085, 
+       "IPOtoDeSPACAR" -> -0.458669007, "TargetSize" -> 264, 
+       "TargetROA" -> -0.237659738, "TargetDebtRatio" -> 2.153788447, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 1, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Harmony Merger Corporation", "deSPAC Name" -> 
+       "NextDecade Corp.", "IPODate" -> "23.03.15", "AnnouncementDate" -> 
+       "07.01.17", "AcquisitionDeadlineDate" -> "23.03.17", "MergerVoteDate" -> 
+       "24.07.17", "IPOYear" -> 2015, "AcquisitionYear" -> 2017, 
+       "AnnouncementTiming" -> 75, "DaysToAnnouncement" -> 656, 
+       "preVoteShareOverCash" -> 0.18, "OneYearPerformance" -> -0.368825191, 
+       "OneYearAR" -> -0.545507803, "IPOSize" -> 115, "extraCashInTrust" -> 
+       0.2, "SponsorOwnership" -> 0.23612149, "WarrantsOverPublicShares" -> 
+       0.916, "Rights" -> 0, "SPACPeriodReturn" -> 0.035, 
+       "SPACPeriodAR" -> -0.144409438, "IPOtoDeSPACReturn" -> -0.372, 
+       "IPOtoDeSPACAR" -> -0.767541588, "TargetSize" -> 1000, 
+       "TargetROA" -> -0.03151352, "TargetDebtRatio" -> 0.106586306, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 1, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Arowana Inc.", "deSPAC Name" -> "VivoPower", "IPODate" -> 
+       "06.05.15", "AnnouncementDate" -> "11.08.16", 
+       "AcquisitionDeadlineDate" -> "06.11.16", "MergerVoteDate" -> 
+       "15.12.16", "IPOYear" -> 2015, "AcquisitionYear" -> 2016, 
+       "AnnouncementTiming" -> 87, "DaysToAnnouncement" -> 463, 
+       "preVoteShareOverCash" -> -0.53, "OneYearPerformance" -> -0.705274043, 
+       "OneYearAR" -> -0.84214316, "IPOSize" -> 82.8, "extraCashInTrust" -> 
+       0.2, "SponsorOwnership" -> 0.762501151, "WarrantsOverPublicShares" -> 
+       1.704, "Rights" -> 1, "SPACPeriodReturn" -> -0.033, 
+       "SPACPeriodAR" -> -0.186698139, "IPOtoDeSPACReturn" -> -0.715, 
+       "IPOtoDeSPACAR" -> -1.01791478, "TargetSize" -> 162, 
+       "TargetROA" -> -0.100984753, "TargetDebtRatio" -> 1.132301278, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 1, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Hennessy Capital Acquisition Corporation II", 
+       "deSPAC Name" -> "Daseke, Inc.", "IPODate" -> "28.07.15", 
+       "AnnouncementDate" -> "22.12.16", "AcquisitionDeadlineDate" -> 
+       "28.07.17", "MergerVoteDate" -> "27.02.17", "IPOYear" -> 2015, 
+       "AcquisitionYear" -> 2017, "AnnouncementTiming" -> 218, 
+       "DaysToAnnouncement" -> 513, "preVoteShareOverCash" -> -0.38, 
+       "OneYearPerformance" -> 0.061330561, "OneYearAR" -> -0.043780021, 
+       "IPOSize" -> 199.6, "extraCashInTrust" -> 0, "SponsorOwnership" -> 
+       0.199996313, "WarrantsOverPublicShares" -> 1.696, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0, "SPACPeriodAR" -> -0.173347799, 
+       "IPOtoDeSPACReturn" -> 0.021, "IPOtoDeSPACAR" -> -0.260221947, 
+       "TargetSize" -> 702, "TargetROA" -> 0.006356349, "TargetDebtRatio" -> 
+       0.809800992, "Manufacturing" -> 1, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Gores Holdings Inc", "deSPAC Name" -> "Hostess Brands", 
+       "IPODate" -> "19.08.15", "AnnouncementDate" -> "05.07.16", 
+       "AcquisitionDeadlineDate" -> "19.08.17", "MergerVoteDate" -> 
+       "03.11.16", "IPOYear" -> 2015, "AcquisitionYear" -> 2017, 
+       "AnnouncementTiming" -> 321, "DaysToAnnouncement" -> 321, 
+       "preVoteShareOverCash" -> 1.28, "OneYearPerformance" -> 0.027874564, 
+       "OneYearAR" -> -0.274378178, "IPOSize" -> 375, "extraCashInTrust" -> 0,
+        "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.74, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0.136, "SPACPeriodAR" -> 
+       0.138934454, "IPOtoDeSPACReturn" -> 0.18, 
+       "IPOtoDeSPACAR" -> -0.102688173, "TargetSize" -> 2300, "TargetROA" -> 
+       0.115951268, "TargetDebtRatio" -> 2.074918567, "Manufacturing" -> 0, 
+       "ConsumerAndServices" -> 1, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Silver Run Acquisition Corporation", "deSPAC Name" -> 
+       "Centennial Resource Development", "IPODate" -> "29.02.16", 
+       "AnnouncementDate" -> "22.06.16", "AcquisitionDeadlineDate" -> 
+       "01.03.18", "MergerVoteDate" -> "07.10.16", "IPOYear" -> 2016, 
+       "AcquisitionYear" -> 2018, "AnnouncementTiming" -> 114, 
+       "DaysToAnnouncement" -> 114, "preVoteShareOverCash" -> 6.19, 
+       "OneYearPerformance" -> 0.166243655, "OneYearAR" -> -0.055846611, 
+       "IPOSize" -> 500, "extraCashInTrust" -> 0, "SponsorOwnership" -> 0.2, 
+       "WarrantsOverPublicShares" -> 0.387, "Rights" -> 0, "SPACPeriodReturn" -> 
+       0.645, "SPACPeriodAR" -> 0.425813594, "IPOtoDeSPACReturn" -> 0.838, 
+       "IPOtoDeSPACAR" -> 0.34509937, "TargetSize" -> 1300, 
+       "TargetROA" -> -0.062239249, "TargetDebtRatio" -> 0.268428269, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 1, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "KLAR Energy Acquisition Corporation", "deSPAC Name" -> 
+       "Rosehill Resources Inc.", "IPODate" -> "10.03.16", "AnnouncementDate" -> 
+       "20.12.16", "AcquisitionDeadlineDate" -> "10.09.17", "MergerVoteDate" -> 
+       "26.04.17", "IPOYear" -> 2016, "AcquisitionYear" -> 2017, 
+       "AnnouncementTiming" -> 264, "DaysToAnnouncement" -> 285, 
+       "preVoteShareOverCash" -> 0.13, "OneYearPerformance" -> -0.245986239, 
+       "OneYearAR" -> -0.358476722, "IPOSize" -> 8.185, "extraCashInTrust" -> 
+       0.42, "SponsorOwnership" -> 0.200006255, "WarrantsOverPublicShares" -> 
+       2.015, "Rights" -> 0, "SPACPeriodReturn" -> 0.041, 
+       "SPACPeriodAR" -> -0.294712829, "IPOtoDeSPACReturn" -> -0.211, 
+       "IPOtoDeSPACAR" -> -0.717479084, "TargetSize" -> 445, 
+       "TargetROA" -> -0.096805032, "TargetDebtRatio" -> 0.533563143, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 1, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "CF Corporation", "deSPAC Name" -> "FGL Holdings", 
+       "IPODate" -> "25.05.16", "AnnouncementDate" -> "24.05.17", 
+       "AcquisitionDeadlineDate" -> "25.05.18", "MergerVoteDate" -> 
+       "08.08.17", "IPOYear" -> 2016, "AcquisitionYear" -> 2017, 
+       "AnnouncementTiming" -> 364, "DaysToAnnouncement" -> 364, 
+       "preVoteShareOverCash" -> 0.66, "OneYearPerformance" -> -0.12371134, 
+       "OneYearAR" -> -0.349594225, "IPOSize" -> 690, "extraCashInTrust" -> 
+       0.02, "SponsorOwnership" -> 0.178571429, "WarrantsOverPublicShares" -> 
+       0.729, "Rights" -> 0, "SPACPeriodReturn" -> 0.069, 
+       "SPACPeriodAR" -> -0.189744444, "IPOtoDeSPACReturn" -> -0.065, 
+       "IPOtoDeSPACAR" -> -0.591508928, "TargetSize" -> 2240, 
+       "TargetROA" -> -0.00992569, "TargetDebtRatio" -> 0.933920705, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 1, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "M I Acquisition Inc.", "deSPAC Name" -> 
+       "Priority Technology Holdings, Inc.", "IPODate" -> "13.09.16", 
+       "AnnouncementDate" -> "27.02.18", "AcquisitionDeadlineDate" -> 
+       "13.09.18", "MergerVoteDate" -> "19.07.18", "IPOYear" -> 2016, 
+       "AcquisitionYear" -> 2018, "AnnouncementTiming" -> 198, 
+       "DaysToAnnouncement" -> 532, "preVoteShareOverCash" -> 0.233, 
+       "OneYearPerformance" -> -0.317561419, "OneYearAR" -> -0.242735057, 
+       "IPOSize" -> 53.1, "extraCashInTrust" -> 0.507, "SponsorOwnership" -> 
+       0.247722668, "WarrantsOverPublicShares" -> 1.079, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.059, "SPACPeriodAR" -> -0.367220721, 
+       "IPOtoDeSPACReturn" -> -0.25, "IPOtoDeSPACAR" -> -0.577040942, 
+       "TargetSize" -> 1000, "TargetROA" -> -0.011911948, "TargetDebtRatio" -> 
+       1.633275374, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 1, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Gores Holdings II, Inc.", "deSPAC Name" -> 
+       "Verra Mobility", "IPODate" -> "19.01.17", "AnnouncementDate" -> 
+       "03.10.18", "AcquisitionDeadlineDate" -> "19.01.19", "MergerVoteDate" -> 
+       "16.10.18", "IPOYear" -> 2017, "AcquisitionYear" -> 2018, 
+       "AnnouncementTiming" -> 108, "DaysToAnnouncement" -> 622, 
+       "preVoteShareOverCash" -> 0.19, "OneYearPerformance" -> 0.388201713, 
+       "OneYearAR" -> 0.403932495, "IPOSize" -> 400, "extraCashInTrust" -> 
+       0.12, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.5, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0.02, 
+       "SPACPeriodAR" -> -0.155301359, "IPOtoDeSPACReturn" -> 0.459, 
+       "IPOtoDeSPACAR" -> 0.270063778, "TargetSize" -> 2400, "TargetROA" -> 
+       0.153877178, "TargetDebtRatio" -> 0.367461632, "Manufacturing" -> 0, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 1, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Fintech Acquisition Corporation II", "deSPAC Name" -> 
+       "International Money Express, Inc.", "IPODate" -> "25.01.17", 
+       "AnnouncementDate" -> "19.12.17", "AcquisitionDeadlineDate" -> 
+       "25.01.19", "MergerVoteDate" -> "20.07.18", "IPOYear" -> 2017, 
+       "AcquisitionYear" -> 2018, "AnnouncementTiming" -> 328, 
+       "DaysToAnnouncement" -> 328, "preVoteShareOverCash" -> 0, 
+       "OneYearPerformance" -> 0.399405352, "OneYearAR" -> 0.470882937, 
+       "IPOSize" -> 175, "extraCashInTrust" -> 0.03, "SponsorOwnership" -> 
+       0.267431162, "WarrantsOverPublicShares" -> 0.512, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.004, "SPACPeriodAR" -> -0.243640947, 
+       "IPOtoDeSPACReturn" -> 0.412, "IPOtoDeSPACAR" -> 0.248990704, 
+       "TargetSize" -> 339, "TargetROA" -> -0.112820254, "TargetDebtRatio" -> 
+       0.833827042, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 1, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Silver Run Acquisition Corporation II", "deSPAC Name" -> 
+       "Alta Mesa Resources, Inc.", "IPODate" -> "28.03.17", 
+       "AnnouncementDate" -> "16.08.17", "AcquisitionDeadlineDate" -> 
+       "28.03.19", "MergerVoteDate" -> "06.02.18", "IPOYear" -> 2017, 
+       "AcquisitionYear" -> 2018, "AnnouncementTiming" -> 141, 
+       "DaysToAnnouncement" -> 141, "preVoteShareOverCash" -> -0.12, 
+       "OneYearPerformance" -> -0.915438951, "OneYearAR" -> -0.927282279, 
+       "IPOSize" -> 1035, "extraCashInTrust" -> 0.07, "SponsorOwnership" -> 
+       0.8, "WarrantsOverPublicShares" -> 1.918, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.017, "SPACPeriodAR" -> -0.127096708, 
+       "IPOtoDeSPACReturn" -> -0.9162, "IPOtoDeSPACAR" -> -1.04453583, 
+       "TargetSize" -> 3836, "TargetROA" -> -0.232408567, "TargetDebtRatio" -> 
+       0.960550518, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 1, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Social Capital Hedosophia Holdings Corporation", 
+       "deSPAC Name" -> "Virgin Galactic", "IPODate" -> "18.09.17", 
+       "AnnouncementDate" -> "09.07.19", "AcquisitionDeadlineDate" -> 
+       "18.12.19", "MergerVoteDate" -> "23.10.19", "IPOYear" -> 2017, 
+       "AcquisitionYear" -> 2019, "AnnouncementTiming" -> 162, 
+       "DaysToAnnouncement" -> 659, "preVoteShareOverCash" -> 0.19, 
+       "OneYearPerformance" -> 0.805660377, "OneYearAR" -> 0.732286603, 
+       "IPOSize" -> 690, "extraCashInTrust" -> 0.33, "SponsorOwnership" -> 
+       0.2, "WarrantsOverPublicShares" -> 0.449, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.038, "SPACPeriodAR" -> -0.068600401, 
+       "IPOtoDeSPACReturn" -> 0.914, "IPOtoDeSPACAR" -> 0.726098979, 
+       "TargetSize" -> 1500, "TargetROA" -> -1.027888772, "TargetDebtRatio" -> 
+       0.733662738, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 1, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Draper Oakwood Technology Acquisition, Inc.", 
+       "deSPAC Name" -> "Reebonz Holding Ltd.", "IPODate" -> "19.09.17", 
+       "AnnouncementDate" -> "04.09.18", "AcquisitionDeadlineDate" -> 
+       "14.09.18", "MergerVoteDate" -> "19.12.18", "IPOYear" -> 2017, 
+       "AcquisitionYear" -> 2018, "AnnouncementTiming" -> 10, 
+       "DaysToAnnouncement" -> 350, "preVoteShareOverCash" -> 35.25, 
+       "OneYearPerformance" -> -0.951817797, "OneYearAR" -> -1.231108459, 
+       "IPOSize" -> 57.5, "extraCashInTrust" -> 0.27, "SponsorOwnership" -> 
+       0.22922252, "WarrantsOverPublicShares" -> 0.524, "Rights" -> 1, 
+       "SPACPeriodReturn" -> 3.752, "SPACPeriodAR" -> 3.779590897, 
+       "IPOtoDeSPACReturn" -> -0.88629, "IPOtoDeSPACAR" -> -1.083444108, 
+       "TargetSize" -> 252, "TargetROA" -> 0.544031578, "TargetDebtRatio" -> 
+       1.769533407, "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Mosaic Acquisition Corporation", "deSPAC Name" -> 
+       "Vivint Smart Home", "IPODate" -> "23.10.17", "AnnouncementDate" -> 
+       "16.09.19", "AcquisitionDeadlineDate" -> "23.01.20", "MergerVoteDate" -> 
+       "17.01.20", "IPOYear" -> 2017, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 129, "DaysToAnnouncement" -> 693, 
+       "preVoteShareOverCash" -> -0.08, "OneYearPerformance" -> 0.971153846, 
+       "OneYearAR" -> 0.68402857, "IPOSize" -> 345, "extraCashInTrust" -> 
+       0.27, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.505, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0, "SPACPeriodAR" -> -0.158636031,
+        "IPOtoDeSPACReturn" -> 1.05, "IPOtoDeSPACAR" -> 0.555502245, 
+       "TargetSize" -> 4200, "TargetROA" -> -0.164554701, "TargetDebtRatio" -> 
+       1.553486529, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 1, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "CM Seven Star Acquisition Corporation", "deSPAC Name" -> 
+       "Kaixin Auto Holdings Ltd.", "IPODate" -> "25.10.17", 
+       "AnnouncementDate" -> "06.11.18", "AcquisitionDeadlineDate" -> 
+       "30.04.19", "MergerVoteDate" -> "24.04.19", "IPOYear" -> 2017, 
+       "AcquisitionYear" -> 2019, "AnnouncementTiming" -> 175, 
+       "DaysToAnnouncement" -> 377, "preVoteShareOverCash" -> -1.61, 
+       "OneYearPerformance" -> -0.897424242, "OneYearAR" -> -0.691819145, 
+       "IPOSize" -> 260.4, "extraCashInTrust" -> 0, "SponsorOwnership" -> 
+       0.216046803, "WarrantsOverPublicShares" -> 0.511, "Rights" -> 1, 
+       "SPACPeriodReturn" -> -0.071, "SPACPeriodAR" -> 0.095854127, 
+       "IPOtoDeSPACReturn" -> -0.91199, "IPOtoDeSPACAR" -> -0.767032001, 
+       "TargetSize" -> 472, "TargetROA" -> -0.081884145, "TargetDebtRatio" -> 
+       0.996510565, "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Leisure Acquisition Corporation", "deSPAC Name" -> 
+       "Ensysce Biosciences, Inc.", "IPODate" -> "05.12.17", 
+       "AnnouncementDate" -> "01.02.21", "AcquisitionDeadlineDate" -> 
+       "30.06.21", "MergerVoteDate" -> "28.06.21", "IPOYear" -> 2017, 
+       "AcquisitionYear" -> 2021, "AnnouncementTiming" -> 149, 
+       "DaysToAnnouncement" -> 1154, "preVoteShareOverCash" -> 3.89, 
+       "OneYearPerformance" -> -0.965376121, "OneYearAR" -> -0.718921016, 
+       "IPOSize" -> 200, "extraCashInTrust" -> 0.41, "SponsorOwnership" -> 
+       0.2, "WarrantsOverPublicShares" -> 0.841, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.4, "SPACPeriodAR" -> -0.212042436, 
+       "IPOtoDeSPACReturn" -> -0.94983, "IPOtoDeSPACAR" -> -1.152090832, 
+       "TargetSize" -> 1100, "TargetROA" -> -0.257836879, "TargetDebtRatio" -> 
+       19.97150997, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       1, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "One Madison Corporation", "deSPAC Name" -> 
+       "RanPak Corp.", "IPODate" -> "22.01.18", "AnnouncementDate" -> 
+       "13.12.18", "AcquisitionDeadlineDate" -> "22.01.20", "MergerVoteDate" -> 
+       "28.05.19", "IPOYear" -> 2018, "AcquisitionYear" -> 2019, 
+       "AnnouncementTiming" -> 325, "DaysToAnnouncement" -> 325, 
+       "preVoteShareOverCash" -> -0.04, "OneYearPerformance" -> -0.258415842, 
+       "OneYearAR" -> -0.208463604, "IPOSize" -> 300, "extraCashInTrust" -> 
+       0.17, "SponsorOwnership" -> 0.272727273, "WarrantsOverPublicShares" -> 
+       0.767, "Rights" -> 0, "SPACPeriodReturn" -> 0.016, "SPACPeriodAR" -> 
+       0.063751792, "IPOtoDeSPACReturn" -> -0.251, 
+       "IPOtoDeSPACAR" -> -0.148840827, "TargetSize" -> 1003, 
+       "TargetROA" -> -0.010386066, "TargetDebtRatio" -> 0.752434845, 
+       "Manufacturing" -> 1, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Opes Acquisition Corporation", "deSPAC Name" -> 
+       "BurgerFi International, Inc.", "IPODate" -> "16.03.18", 
+       "AnnouncementDate" -> "08.06.20", "AcquisitionDeadlineDate" -> 
+       "18.06.20", "MergerVoteDate" -> "15.12.20", "IPOYear" -> 2018, 
+       "AcquisitionYear" -> 2020, "AnnouncementTiming" -> 10, 
+       "DaysToAnnouncement" -> 815, "preVoteShareOverCash" -> 4.59, 
+       "OneYearPerformance" -> -0.577707006, "OneYearAR" -> -0.690922995, 
+       "IPOSize" -> 115, "extraCashInTrust" -> 0.64, "SponsorOwnership" -> 
+       0.261400128, "WarrantsOverPublicShares" -> 1.104, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.645, "SPACPeriodAR" -> 0.393209911, 
+       "IPOtoDeSPACReturn" -> -0.337, "IPOtoDeSPACAR" -> -0.760833118, 
+       "TargetSize" -> 143, "TargetROA" -> 0.203076923, "TargetDebtRatio" -> 
+       0.825672763, "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Pure Acquisition Corporation", "deSPAC Name" -> 
+       "HighPeak Energy, Inc.", "IPODate" -> "17.04.18", "AnnouncementDate" -> 
+       "27.11.19", "AcquisitionDeadlineDate" -> "21.02.20", "MergerVoteDate" -> 
+       "18.08.20", "IPOYear" -> 2018, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 86, "DaysToAnnouncement" -> 589, 
+       "preVoteShareOverCash" -> -0.53, "OneYearPerformance" -> -0.159405272, 
+       "OneYearAR" -> -0.530069286, "IPOSize" -> 414, "extraCashInTrust" -> 
+       0.6, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.748, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0.009, 
+       "SPACPeriodAR" -> -0.02301907, "IPOtoDeSPACReturn" -> -0.145, 
+       "IPOtoDeSPACAR" -> -0.554481266, "TargetSize" -> 845, 
+       "TargetROA" -> -0.104446635, "TargetDebtRatio" -> 0.019340252, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 1, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "VectolQ Acquisition Corporation", "deSPAC Name" -> 
+       "Nikola Corporation", "IPODate" -> "18.05.18", "AnnouncementDate" -> 
+       "03.03.20", "AcquisitionDeadlineDate" -> "18.05.20", "MergerVoteDate" -> 
+       "02.06.20", "IPOYear" -> 2018, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 76, "DaysToAnnouncement" -> 655, 
+       "preVoteShareOverCash" -> 23.63, "OneYearPerformance" -> -0.503090963, 
+       "OneYearAR" -> -1.09018777, "IPOSize" -> 230, "extraCashInTrust" -> 
+       0.36, "SponsorOwnership" -> 0.224021592, "WarrantsOverPublicShares" -> 
+       1.039, "Rights" -> 0, "SPACPeriodReturn" -> 1.87, "SPACPeriodAR" -> 
+       1.987603366, "IPOtoDeSPACReturn" -> 0.688, "IPOtoDeSPACAR" -> 
+       0.229157172, "TargetSize" -> 3300, "TargetROA" -> -0.400012633, 
+       "TargetDebtRatio" -> 0.147853376, "Manufacturing" -> 1, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "GS Acquisition Holdings Corporation", "deSPAC Name" -> 
+       "Vertiv Holdings Co", "IPODate" -> "12.06.18", "AnnouncementDate" -> 
+       "10.12.19", "AcquisitionDeadlineDate" -> "12.06.20", "MergerVoteDate" -> 
+       "06.02.20", "IPOYear" -> 2018, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 185, "DaysToAnnouncement" -> 546, 
+       "preVoteShareOverCash" -> 2.54, "OneYearPerformance" -> 0.654503106, 
+       "OneYearAR" -> 0.288744856, "IPOSize" -> 690, "extraCashInTrust" -> 
+       0.25, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.443, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0.269, "SPACPeriodAR" -> 
+       0.261113669, "IPOtoDeSPACReturn" -> 1.131, "IPOtoDeSPACAR" -> 
+       0.75421041, "TargetSize" -> 5300, "TargetROA" -> -0.065301029, 
+       "TargetDebtRatio" -> 1.112693976, "Manufacturing" -> 1, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "LF Capital Acquisition Corporation", "deSPAC Name" -> 
+       "LandSea Home Corp.", "IPODate" -> "22.06.18", "AnnouncementDate" -> 
+       "31.08.20", "AcquisitionDeadlineDate" -> "22.09.20", "MergerVoteDate" -> 
+       "11.11.20", "IPOYear" -> 2018, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 22, "DaysToAnnouncement" -> 801, 
+       "preVoteShareOverCash" -> -0.02, "OneYearPerformance" -> -0.169040836, 
+       "OneYearAR" -> -0.594825429, "IPOSize" -> 155.25, "extraCashInTrust" -> 
+       0.57, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 1.5, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0.051, "SPACPeriodAR" -> 
+       0.005088963, "IPOtoDeSPACReturn" -> -0.125, 
+       "IPOtoDeSPACAR" -> -0.619487018, "TargetSize" -> 630, "TargetROA" -> 
+       0.025896297, "TargetDebtRatio" -> 0.304863939, "Manufacturing" -> 0, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 1, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "HL Acquisition Corporation", "deSPAC Name" -> 
+       "Fusion Fuel Green", "IPODate" -> "02.07.18", "AnnouncementDate" -> 
+       "08.06.20", "AcquisitionDeadlineDate" -> "02.01.21", "MergerVoteDate" -> 
+       "04.12.20", "IPOYear" -> 2018, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 208, "DaysToAnnouncement" -> 707, 
+       "preVoteShareOverCash" -> 8.21, "OneYearPerformance" -> -0.495409015, 
+       "OneYearAR" -> -0.698885199, "IPOSize" -> 55, "extraCashInTrust" -> 
+       0.56, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 1.341, 
+       "Rights" -> 1, "SPACPeriodReturn" -> 0.735, "SPACPeriodAR" -> 
+       0.708487988, "IPOtoDeSPACReturn" -> 0.209, 
+       "IPOtoDeSPACAR" -> -0.213484703, "TargetSize" -> 97, 
+       "TargetROA" -> -0.126968801, "TargetDebtRatio" -> 0.945929636, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 1, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Tottenham Acquisition I Limited", "deSPAC Name" -> 
+       "Clene Nanomedicine, Inc.", "IPODate" -> "06.08.18", 
+       "AnnouncementDate" -> "02.09.20", "AcquisitionDeadlineDate" -> 
+       "06.03.21", "MergerVoteDate" -> "30.12.20", "IPOYear" -> 2018, 
+       "AcquisitionYear" -> 2020, "AnnouncementTiming" -> 185, 
+       "DaysToAnnouncement" -> 758, "preVoteShareOverCash" -> 1.34, 
+       "OneYearPerformance" -> -0.544950055, "OneYearAR" -> -0.693140056, 
+       "IPOSize" -> 46, "extraCashInTrust" -> 1.02, "SponsorOwnership" -> 
+       0.229480737, "WarrantsOverPublicShares" -> 0.524, "Rights" -> 1, 
+       "SPACPeriodReturn" -> 0.297, "SPACPeriodAR" -> 0.071113129, 
+       "IPOtoDeSPACReturn" -> -0.59, "IPOtoDeSPACAR" -> -0.982994662, 
+       "TargetSize" -> 543, "TargetROA" -> -0.749026335, "TargetDebtRatio" -> 
+       0.671506352, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       1, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Forum Merger II Corporation", "deSPAC Name" -> 
+       "Itelia International (Tatooed Chef)", "IPODate" -> "11.09.18", 
+       "AnnouncementDate" -> "12.06.20", "AcquisitionDeadlineDate" -> 
+       "30.10.20", "MergerVoteDate" -> "15.10.20", "IPOYear" -> 2018, 
+       "AcquisitionYear" -> 2020, "AnnouncementTiming" -> 140, 
+       "DaysToAnnouncement" -> 640, "preVoteShareOverCash" -> 15.81, 
+       "OneYearPerformance" -> -0.296856347, "OneYearAR" -> -0.697396829, 
+       "IPOSize" -> 200, "extraCashInTrust" -> 0.37, "SponsorOwnership" -> 
+       0.220424868, "WarrantsOverPublicShares" -> 1.033, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 1.52, "SPACPeriodAR" -> 1.538262011, 
+       "IPOtoDeSPACReturn" -> 0.767, "IPOtoDeSPACAR" -> 0.3944371, 
+       "TargetSize" -> 480, "TargetROA" -> 0.216555345, "TargetDebtRatio" -> 
+       0.770457445, "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Spartan Energy Acquisition Corporation", "deSPAC Name" -> 
+       "Fisker, Inc.", "IPODate" -> "14.08.18", "AnnouncementDate" -> 
+       "13.07.20", "AcquisitionDeadlineDate" -> "14.08.20", "MergerVoteDate" -> 
+       "28.10.20", "IPOYear" -> 2018, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 32, "DaysToAnnouncement" -> 699, 
+       "preVoteShareOverCash" -> -0.32, "OneYearPerformance" -> 0.791294643, 
+       "OneYearAR" -> 0.305508992, "IPOSize" -> 552, "extraCashInTrust" -> 
+       0.32, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.503, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0, "SPACPeriodAR" -> 0.021519568, 
+       "IPOtoDeSPACReturn" -> 0.605, "IPOtoDeSPACAR" -> 0.190633265, 
+       "TargetSize" -> 1900, "TargetROA" -> -1.925145992, "TargetDebtRatio" -> 
+       3.949421965, "Manufacturing" -> 1, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "ChaSerg Technology Acquisition Corporation", 
+       "deSPAC Name" -> "Grid Dynamics", "IPODate" -> "10.10.18", 
+       "AnnouncementDate" -> "13.11.19", "AcquisitionDeadlineDate" -> 
+       "10.04.20", "MergerVoteDate" -> "04.03.20", "IPOYear" -> 2018, 
+       "AcquisitionYear" -> 2020, "AnnouncementTiming" -> 149, 
+       "DaysToAnnouncement" -> 399, "preVoteShareOverCash" -> 1.63, 
+       "OneYearPerformance" -> 0.196666667, "OneYearAR" -> -0.304721378, 
+       "IPOSize" -> 220, "extraCashInTrust" -> 0.16, "SponsorOwnership" -> 
+       0.217916815, "WarrantsOverPublicShares" -> 0.514, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.15, "SPACPeriodAR" -> 0.166725439, 
+       "IPOtoDeSPACReturn" -> 0.436, "IPOtoDeSPACAR" -> -0.001990557, 
+       "TargetSize" -> 407, "TargetROA" -> 0.296224961, "TargetDebtRatio" -> 
+       0.200043139, "Manufacturing" -> 0, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 1, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Collier Creek Holdings", "deSPAC Name" -> 
+       "Utz Brands, Inc.", "IPODate" -> "10.10.18", "AnnouncementDate" -> 
+       "05.06.20", "AcquisitionDeadlineDate" -> "10.10.20", "MergerVoteDate" -> 
+       "27.08.20", "IPOYear" -> 2018, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 127, "DaysToAnnouncement" -> 604, 
+       "preVoteShareOverCash" -> 5.51, "OneYearPerformance" -> 0.168298654, 
+       "OneYearAR" -> -0.289318974, "IPOSize" -> 440, "extraCashInTrust" -> 
+       0.29, "SponsorOwnership" -> 0.212527964, "WarrantsOverPublicShares" -> 
+       0.497, "Rights" -> 0, "SPACPeriodReturn" -> 0.5, "SPACPeriodAR" -> 
+       0.475406473, "IPOtoDeSPACReturn" -> 0.909, "IPOtoDeSPACAR" -> 
+       0.408520923, "TargetSize" -> 1560, "TargetROA" -> -0.020859413, 
+       "TargetDebtRatio" -> 1.042838775, "Manufacturing" -> 1, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 0, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "DiamondPeak Holdings Corporation", "deSPAC Name" -> 
+       "Lordstown Motors", "IPODate" -> "04.03.19", "AnnouncementDate" -> 
+       "03.08.20", "AcquisitionDeadlineDate" -> "04.03.21", "MergerVoteDate" -> 
+       "22.10.20", "IPOYear" -> 2019, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 213, "DaysToAnnouncement" -> 518, 
+       "preVoteShareOverCash" -> 11.27, "OneYearPerformance" -> -0.737506864, 
+       "OneYearAR" -> -1.148104913, "IPOSize" -> 280, "extraCashInTrust" -> 
+       0.15, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.514, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0.917, "SPACPeriodAR" -> 
+       0.865886175, "IPOtoDeSPACReturn" -> -0.522, 
+       "IPOtoDeSPACAR" -> -1.025686408, "TargetSize" -> 965, 
+       "TargetROA" -> -0.309753771, "TargetDebtRatio" -> 0.744947237, 
+       "Manufacturing" -> 1, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Tortoise Acquisition Corporation", "deSPAC Name" -> 
+       "Hyliion, Inc.", "IPODate" -> "04.03.19", "AnnouncementDate" -> 
+       "19.06.20", "AcquisitionDeadlineDate" -> "04.03.21", "MergerVoteDate" -> 
+       "28.09.20", "IPOYear" -> 2019, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 258, "DaysToAnnouncement" -> 473, 
+       "preVoteShareOverCash" -> 34.23, "OneYearPerformance" -> -0.844515044, 
+       "OneYearAR" -> -1.338205322, "IPOSize" -> 233.01, "extraCashInTrust" -> 
+       0.16, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.786, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 3.05, "SPACPeriodAR" -> 
+       3.107400104, "IPOtoDeSPACReturn" -> -0.168, 
+       "IPOtoDeSPACAR" -> -0.6278039, "TargetSize" -> 1100, 
+       "TargetROA" -> -1.295483753, "TargetDebtRatio" -> 2.281853008, 
+       "Manufacturing" -> 1, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Act II Global Acquisition Corporation", "deSPAC Name" -> 
+       "Whole Earth Brands, Inc.", "IPODate" -> "30.04.19", 
+       "AnnouncementDate" -> "19.12.19", "AcquisitionDeadlineDate" -> 
+       "30.04.21", "MergerVoteDate" -> "24.06.20", "IPOYear" -> 2019, 
+       "AcquisitionYear" -> 2020, "AnnouncementTiming" -> 233, 
+       "DaysToAnnouncement" -> 233, "preVoteShareOverCash" -> 0.71, 
+       "OneYearPerformance" -> 0.338613861, "OneYearAR" -> -0.330980229, 
+       "IPOSize" -> 300, "extraCashInTrust" -> 0.18, "SponsorOwnership" -> 
+       0.200079992, "WarrantsOverPublicShares" -> 0.725, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.025, "SPACPeriodAR" -> 0.108514038, 
+       "IPOtoDeSPACReturn" -> 0.352, "IPOtoDeSPACAR" -> -0.156725341, 
+       "TargetSize" -> 440, "TargetROA" -> 0.060826772, "TargetDebtRatio" -> 
+       0.120373458, "Manufacturing" -> 1, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Landcadia Holdings II", "deSPAC Name" -> 
+       "Golden Nugget Online Gaming", "IPODate" -> "09.05.19", 
+       "AnnouncementDate" -> "29.06.20", "AcquisitionDeadlineDate" -> 
+       "09.05.21", "MergerVoteDate" -> "29.12.20", "IPOYear" -> 2019, 
+       "AcquisitionYear" -> 2020, "AnnouncementTiming" -> 314, 
+       "DaysToAnnouncement" -> 417, "preVoteShareOverCash" -> 16.11, 
+       "OneYearPerformance" -> -0.542793792, "OneYearAR" -> -0.689774038, 
+       "IPOSize" -> 316.25, "extraCashInTrust" -> 0.13, "SponsorOwnership" -> 
+       0.199994941, "WarrantsOverPublicShares" -> 0.519, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 1.549, "SPACPeriodAR" -> 1.242887624, 
+       "IPOtoDeSPACReturn" -> 0.031, "IPOtoDeSPACAR" -> -0.449690743, 
+       "TargetSize" -> 745, "TargetROA" -> 0.535391532, "TargetDebtRatio" -> 
+       1.177629488, "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Churchill Capital Corporation II", "deSPAC Name" -> 
+       "Skillsoft", "IPODate" -> "01.07.19", "AnnouncementDate" -> "13.10.20",
+        "AcquisitionDeadlineDate" -> "01.10.21", "MergerVoteDate" -> 
+       "10.06.21", "IPOYear" -> 2019, "AcquisitionYear" -> 2021, 
+       "AnnouncementTiming" -> 353, "DaysToAnnouncement" -> 470, 
+       "preVoteShareOverCash" -> 0.07, "OneYearPerformance" -> -0.537674419, 
+       "OneYearAR" -> -0.31723706, "IPOSize" -> 690, "extraCashInTrust" -> 
+       0.1, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.562, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0.011, 
+       "SPACPeriodAR" -> -0.519249901, "IPOtoDeSPACReturn" -> -0.503, 
+       "IPOtoDeSPACAR" -> -0.692035831, "TargetSize" -> 1500, 
+       "TargetROA" -> -0.322545538, "TargetDebtRatio" -> 1.512923414, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Oaktree Acquisition Corporation", "deSPAC Name" -> 
+       "HIMS", "IPODate" -> "22.07.19", "AnnouncementDate" -> "01.10.20", 
+       "AcquisitionDeadlineDate" -> "22.07.21", "MergerVoteDate" -> 
+       "19.01.21", "IPOYear" -> 2019, "AcquisitionYear" -> 2021, 
+       "AnnouncementTiming" -> 294, "DaysToAnnouncement" -> 437, 
+       "preVoteShareOverCash" -> 7.89, "OneYearPerformance" -> -0.705738706, 
+       "OneYearAR" -> -0.651837379, "IPOSize" -> 201.25, "extraCashInTrust" -> 
+       0.15, "SponsorOwnership" -> 0.19999205, "WarrantsOverPublicShares" -> 
+       0.533, "Rights" -> 0, "SPACPeriodReturn" -> 0.746, "SPACPeriodAR" -> 
+       0.321767146, "IPOtoDeSPACReturn" -> -0.518, 
+       "IPOtoDeSPACAR" -> -0.868779107, "TargetSize" -> 1600, 
+       "TargetROA" -> -0.237783405, "TargetDebtRatio" -> 0.145653469, 
+       "Manufacturing" -> 0, "ConsumerAndServices" -> 1, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Thunder Bridge Acquisition II, Limited", "deSPAC Name" -> 
+       "indie Semiconductor", "IPODate" -> "13.08.19", "AnnouncementDate" -> 
+       "15.12.20", "AcquisitionDeadlineDate" -> "22.07.21", "MergerVoteDate" -> 
+       "09.06.21", "IPOYear" -> 2019, "AcquisitionYear" -> 2021, 
+       "AnnouncementTiming" -> 219, "DaysToAnnouncement" -> 490, 
+       "preVoteShareOverCash" -> 0.22, "OneYearPerformance" -> -0.364305428, 
+       "OneYearAR" -> -0.152105749, "IPOSize" -> 345, "extraCashInTrust" -> 
+       0.13, "SponsorOwnership" -> 0.2, "WarrantsOverPublicShares" -> 0.751, 
+       "Rights" -> 0, "SPACPeriodReturn" -> 0.003, 
+       "SPACPeriodAR" -> -0.56873043, "IPOtoDeSPACReturn" -> -0.309, 
+       "IPOtoDeSPACAR" -> -0.543220715, "TargetSize" -> 982, 
+       "TargetROA" -> -4.602255182, "TargetDebtRatio" -> 3.889369698, 
+       "Manufacturing" -> 1, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Juniper Industrial Holdings, Inc.", "deSPAC Name" -> 
+       "Janus International Group, LLC", "IPODate" -> "13.11.19", 
+       "AnnouncementDate" -> "22.12.20", "AcquisitionDeadlineDate" -> 
+       "13.11.21", "MergerVoteDate" -> "03.06.21", "IPOYear" -> 2019, 
+       "AcquisitionYear" -> 2021, "AnnouncementTiming" -> 326, 
+       "DaysToAnnouncement" -> 405, "preVoteShareOverCash" -> 3.39, 
+       "OneYearPerformance" -> -0.158213475, "OneYearAR" -> 0.008837207, 
+       "IPOSize" -> 345, "extraCashInTrust" -> 0.06, "SponsorOwnership" -> 
+       0.2, "WarrantsOverPublicShares" -> 0.794, "Rights" -> 0, 
+       "SPACPeriodReturn" -> 0.341, "SPACPeriodAR" -> -0.131536657, 
+       "IPOtoDeSPACReturn" -> 0.112, "IPOtoDeSPACAR" -> -0.110223202, 
+       "TargetSize" -> 1930, "TargetROA" -> 0.065940237, "TargetDebtRatio" -> 
+       0.838721938, "Manufacturing" -> 1, "ConsumerAndServices" -> 0, 
+       "FinanceInsuranceRealEstate" -> 0, "Energy" -> 0, "HealthcarePharma" -> 
+       0, "TechnologySpace" -> 0, "ShippingStorage" -> 0], 
+      Association[
+      "SPAC Name" -> "Healthcare Merger Corporation", "deSPAC Name" -> 
+       "SOC Telemed", "IPODate" -> "17.12.19", "AnnouncementDate" -> 
+       "29.07.20", "AcquisitionDeadlineDate" -> "17.12.21", "MergerVoteDate" -> 
+       "30.10.20", "IPOYear" -> 2019, "AcquisitionYear" -> 2020, 
+       "AnnouncementTiming" -> 91, "DaysToAnnouncement" -> 225, 
+       "preVoteShareOverCash" -> -0.73, "OneYearPerformance" -> -0.748049052, 
+       "OneYearAR" -> -1.268770559, "IPOSize" -> 250, "extraCashInTrust" -> 
+       0.08, "SponsorOwnership" -> 0.217527387, "WarrantsOverPublicShares" -> 
+       0.514, "Rights" -> 0, "SPACPeriodReturn" -> 0.004, "SPACPeriodAR" -> 
+       0.061870956, "IPOtoDeSPACReturn" -> -0.774, 
+       "IPOtoDeSPACAR" -> -1.230384552, "TargetSize" -> 721, "TargetROA" -> 
+       0.382199501, "TargetDebtRatio" -> 1.760711285, "Manufacturing" -> 0, 
+       "ConsumerAndServices" -> 0, "FinanceInsuranceRealEstate" -> 0, 
+       "Energy" -> 0, "HealthcarePharma" -> 1, "TechnologySpace" -> 0, 
+       "ShippingStorage" -> 0]}, 
+     TypeSystem`Vector[
+      TypeSystem`Struct[{
+       "SPAC Name", "deSPAC Name", "IPODate", "AnnouncementDate", 
+        "AcquisitionDeadlineDate", "MergerVoteDate", "IPOYear", 
+        "AcquisitionYear", "AnnouncementTiming", "DaysToAnnouncement", 
+        "preVoteShareOverCash", "OneYearPerformance", "OneYearAR", "IPOSize", 
+        "extraCashInTrust", "SponsorOwnership", "WarrantsOverPublicShares", 
+        "Rights", "SPACPeriodReturn", "SPACPeriodAR", "IPOtoDeSPACReturn", 
+        "IPOtoDeSPACAR", "TargetSize", "TargetROA", "TargetDebtRatio", 
+        "Manufacturing", "ConsumerAndServices", "FinanceInsuranceRealEstate", 
+        "Energy", "HealthcarePharma", "TechnologySpace", "ShippingStorage"}, {
+       
+        TypeSystem`Atom[String], 
+        TypeSystem`Atom[String], 
+        TypeSystem`Atom[String], 
+        TypeSystem`Atom[String], 
+        TypeSystem`Atom[String], 
+        TypeSystem`Atom[String], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Real], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer], 
+        TypeSystem`Atom[Integer]}], 49], 
+     Association[]],
+    SelectWithContents->True,
+    Selectable->False]}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.86767807314051*^9, 3.8676780836884737`*^9}, {
+  3.867678835371275*^9, 3.86767883605933*^9}, {3.867738062186529*^9, 
+  3.867738067699016*^9}, {3.867828826410555*^9, 3.867828827874382*^9}, {
+  3.867830171985332*^9, 3.867830173429441*^9}, {3.867834586352961*^9, 
+  3.867834587493148*^9}, {3.86783589013274*^9, 3.867835891622806*^9}, {
+  3.867836330597468*^9, 3.867836332216289*^9}, {3.8678384698474283`*^9, 
+  3.867838471542205*^9}, {3.8678405304026117`*^9, 3.867840532037785*^9}, {
+  3.8692232577229147`*^9, 3.8692232989480953`*^9}, {3.869223654571988*^9, 
+  3.869223660984523*^9}, {3.869227491267746*^9, 3.869227497022025*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"561e5969-996f-40e7-9c64-b9c1c66dc1ce"],
+
+Cell["SPAC Name:\t\t\tName of the SPAC", "Item",
+ CellChangeTimes->{{3.8692233470480623`*^9, 3.869223354606339*^9}, 
+   3.869223461818138*^9},ExpressionUUID->"e4f07a5a-a37f-4e76-860e-\
+659fd3dd73ee"],
+
+Cell["deSPAC Name:\t\t\tName of the post-merger company", "Item",
+ CellChangeTimes->{{3.8692233470480623`*^9, 3.869223369130777*^9}, 
+   3.8692234629162083`*^9},ExpressionUUID->"68b21313-3fdc-4363-a279-\
+314761040565"],
+
+Cell["IPODate:\t\t\tDate of the SPAC\[CloseCurlyQuote]s IPO", "Item",
+ CellChangeTimes->{{3.8692233470480623`*^9, 3.869223381309576*^9}, 
+   3.86922346424901*^9},ExpressionUUID->"52f1e295-e4ac-4865-a7e2-\
+734e0767dfa3"],
+
+Cell["AcquisitionDeadlineDate: \tThe acquisition deadline", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.867679247049844*^9}},ExpressionUUID->"d445acb4-239b-42a4-8ec4-\
+7a345a9454ed"],
+
+Cell["MergerVoteDate: \t\tDate of the vote on the merger", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.86767924919879*^9}},ExpressionUUID->"8d00ee97-978b-4383-a72c-\
+420d692ac9aa"],
+
+Cell["IPOYear:\t\t\tThe year in which the SPAC went public", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.867679273312101*^9}},ExpressionUUID->"77e923b4-c1a2-4b17-b488-\
+4ab6b51ee962"],
+
+Cell["\<\
+AcquisitionYear:\t\tThe year in which the SPAC carried out a merger\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.8676792971944437`*^9}},ExpressionUUID->"0b5a5f61-32c3-489d-83d1-\
+49efd794a805"],
+
+Cell["\<\
+AnnouncementTiming:\t\tthe minimum of: the no. days between an IPO and the \
+acquisition announcement date, or the no. of days between the acquisition \
+announcement date and the merger deadline\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.867679376611271*^9}},ExpressionUUID->"12d6561a-4494-40ae-80e8-\
+f69a5682c915"],
+
+Cell["\<\
+preVoteShareOverCash:\tShare price of the SPAC one day before the merger vote \
+minus the cash in trust per share\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.867679436169405*^9}},ExpressionUUID->"428993db-0dfb-4f84-917b-\
+f8875e18a717"],
+
+Cell["\<\
+OneYearPerformance:\t\tThe performance of the post-merger company share price \
+one year after the merger vote\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.867679474997031*^9}},ExpressionUUID->"c596c762-4013-4982-8ee7-\
+bab74167e67b"],
+
+Cell["\<\
+OneYearAR:\t\t\tThe abnormal return (Russell 2000 as benchmark) of the \
+post-merger company share price one year after the merger\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.86767953883604*^9}},ExpressionUUID->"65bbad66-a1e6-45dd-a6ba-\
+3180c0b1253f"],
+
+Cell["IPOSize:\t\t\tPublic Proceeds from the SPAC\[CloseCurlyQuote]s IPO", \
+"Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.8676795618118687`*^9}},ExpressionUUID->"82e64563-faa3-469a-9468-\
+1d5f6b7d4a65"],
+
+Cell["\<\
+extraCashInTrust:\t\testimated redemption value per share minus 10$\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 
+  3.8676796005599213`*^9}},ExpressionUUID->"945598f6-f0d9-428b-b0ad-\
+29286bf8bcaf"],
+
+Cell["\<\
+SponsorOwnership:\t\tSponsor shares divided by public + sponsor shares\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 3.867679593278475*^9}, {
+  3.8676796556477737`*^9, 
+  3.867679698000614*^9}},ExpressionUUID->"87194840-9fb3-4123-b38a-\
+0425c496d9ec"],
+
+Cell["\<\
+Warrants/publichShares:\tno. of warrants divided by the no. of public shares\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 3.867679593278475*^9}, {
+  3.8676796556477737`*^9, 
+  3.867679733499176*^9}},ExpressionUUID->"b018506a-95ac-43fe-9ef0-\
+f01e4ae8ba11"],
+
+Cell["\<\
+Rights:\t\t\t\tdummy variable; 1 if rights are included in the units, 0 \
+otherwise\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 3.867679593278475*^9}, {
+  3.8676796556477737`*^9, 
+  3.867679761737694*^9}},ExpressionUUID->"5d235486-6035-4197-9a17-\
+d0ee11276598"],
+
+Cell["\<\
+SPACPeriodReturn:\t\tThe return earned on shares during the period from the \
+IPO to the redemption deadline\
+\>", "Item",
+ CellChangeTimes->{{3.869223402540908*^9, 
+  3.8692234691016703`*^9}},ExpressionUUID->"749b12e2-c070-4030-964c-\
+b97635430834"],
+
+Cell["\<\
+SPACPeriodAR:\t\t\tThe AR earned on shares during the period from the IPO to \
+the redemption deadline\
+\>", "Item",
+ CellChangeTimes->{{3.869223402540908*^9, 
+  3.86922349632195*^9}},ExpressionUUID->"804dce74-f0ba-4df3-999b-\
+230b87bda602"],
+
+Cell["\<\
+IPOtoDeSPACReturn:\t\tOne-year post-merger return measured from the IPO of \
+the SPAC\
+\>", "Item",
+ CellChangeTimes->{{3.869223402540908*^9, 
+  3.869223531165839*^9}},ExpressionUUID->"d9a76166-6b9e-48ef-8674-\
+999ecfe0ed5a"],
+
+Cell["\<\
+IPOtoDeSPACAR:\t\tOn-year post-merger AR measured from the IPO of the SPAC\
+\>", "Item",
+ CellChangeTimes->{{3.869223402540908*^9, 
+  3.869223552335343*^9}},ExpressionUUID->"a4d3c161-8093-461f-b1f8-\
+753b2ed37cd3"],
+
+Cell["\<\
+TargetSize:\t\t\tCombined Enterprise Value as implied by the merger \
+transaction\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 3.867679593278475*^9}, {
+  3.8676796556477737`*^9, 
+  3.867679798405504*^9}},ExpressionUUID->"5d11f0ae-fd58-4ea2-84d8-\
+eece0c9bc311"],
+
+Cell["\<\
+TargetROA:\t\t\tReturn on Assets of the target company for the last full year \
+before the merger\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 3.867679593278475*^9}, {
+  3.8676796556477737`*^9, 
+  3.867679840391015*^9}},ExpressionUUID->"7f76fd2b-0ee0-40d0-ad0d-\
+1e1d50ca25ca"],
+
+Cell["\<\
+TargetDebtRatio:\t\tDebt Ratio based on the last annual financial statement \
+before the merger\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 3.867679593278475*^9}, {
+  3.8676796556477737`*^9, 
+  3.867679892703373*^9}},ExpressionUUID->"961f5ba9-54ee-408d-a5c5-\
+b83b19d8f525"],
+
+Cell["\<\
+Industry dummy variables:\tManufacturing; ConsumerAndServices; \
+FinanceInsuranceRealEstate; Energy (includes electicity, oil and gas); \
+HealthcarePharma; TechnologySpace; ShippingStorage\
+\>", "Item",
+ CellChangeTimes->{{3.8676791893521442`*^9, 3.867679593278475*^9}, {
+  3.8676796556477737`*^9, 3.867679976038575*^9}, {3.867738196133545*^9, 
+  3.867738207872431*^9}},ExpressionUUID->"abf7556c-326c-4d99-ba57-\
+ab8b09a77e95"],
+
+Cell["Sample Distribution", "Section",
+ CellChangeTimes->{{3.867678221771598*^9, 
+  3.8676782291821537`*^9}},ExpressionUUID->"3e1fb587-4618-4fe2-b173-\
+09197427fdf1"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Yearly Distribution", "Subsection"]], "Subtitle",
+ CellChangeTimes->{{3.867737766750548*^9, 
+  3.8677377891043463`*^9}},ExpressionUUID->"6ce60228-0962-4a17-b774-\
+46d65231019e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CrossSectionalData", "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.867678195838584*^9, 3.8676782004481153`*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"59bf5b3e-648e-4f02-b434-bd7b0e6c6d82"],
+
+Cell[BoxData["49"], "Output",
+ CellChangeTimes->{3.867678201028042*^9, 3.8676788730905523`*^9, 
+  3.867828863598507*^9, 3.867834441505076*^9, 3.8678346113249207`*^9, 
+  3.8678359038602953`*^9, 3.867836341367556*^9, 3.867840542128105*^9, 
+  3.869223559260453*^9, 3.869223698083379*^9, 3.869227506134129*^9},
+ CellLabel->"Out[72]=",ExpressionUUID->"18f281eb-df8e-449c-8ce9-8c2fbc08ba2c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2010"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867673477756134*^9, 3.8676735425015707`*^9}, 
+   3.8676735737517*^9, {3.86767366026541*^9, 3.867673661291964*^9}, {
+   3.86767372005976*^9, 3.867673724610073*^9}, {3.8676738178191967`*^9, 
+   3.867673831290474*^9}, {3.867673938118565*^9, 3.867673956356738*^9}, {
+   3.867673995717062*^9, 3.867673999671588*^9}, {3.867674827833948*^9, 
+   3.867674840624731*^9}, {3.867674881528001*^9, 3.867674982650343*^9}, {
+   3.8676750177195663`*^9, 3.8676750265159492`*^9}, 3.867678147971157*^9},
+ CellLabel->"In[73]:=",ExpressionUUID->"012ce493-6fa3-44e3-bef1-56daebfb7391"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{
+  3.867674841237838*^9, {3.867674884297328*^9, 3.8676749833922987`*^9}, 
+   3.867675027268732*^9, 3.867678174601985*^9, 3.867828865999535*^9, 
+   3.867834613180686*^9, 3.8678359063756323`*^9, 3.869223793554205*^9, 
+   3.8692275092396297`*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"3da842a2-1a28-4df1-afe4-4f7ad942c1a6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2011"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867675044992055*^9, 3.8676750739793787`*^9}, 
+   3.86767814797281*^9},
+ CellLabel->"In[16]:=",ExpressionUUID->"c36984aa-9a07-4779-915c-c1ddd1a13455"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.8676750592665253`*^9, 3.867675075091661*^9}, 
+   3.8676781772614403`*^9, 3.867834615159978*^9, 3.869223795985708*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"6e341f5e-d6ea-466d-923f-d92a21ca4e80"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2012"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.8676750765575647`*^9, 3.867675101129603*^9}, 
+   3.8676781479744263`*^9},
+ CellLabel->"In[17]:=",ExpressionUUID->"3af259e2-b08a-4d54-ae29-59192f86232d"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.867675093047658*^9, 3.8676751022888823`*^9}, 
+   3.869223798597516*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"6e4169f6-9602-4511-9261-26b1bd7f74a5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2013"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867675149006041*^9, 3.867675183784074*^9}, 
+   3.8676781479761267`*^9},
+ CellLabel->"In[74]:=",ExpressionUUID->"c6344326-ac5d-4fe5-8e65-3d0b84f1d24c"],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{{3.8676751653287086`*^9, 3.8676751842753267`*^9}, 
+   3.869223800940473*^9, 3.869227511492282*^9},
+ CellLabel->"Out[74]=",ExpressionUUID->"ac43fd4a-d38c-462b-9b35-a08787c2cdc1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2014"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867675262383057*^9, 3.8676752625587673`*^9}, 
+   3.8676781302822113`*^9},
+ CellLabel->"In[19]:=",ExpressionUUID->"be99a20a-ed0b-4ba6-a816-86a45a0cea89"],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{3.867675263915998*^9, 3.867836344181232*^9, 
+  3.86922380370919*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"e0b62f79-6b6f-4a4d-b8ed-04469fe1e319"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2015"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.8676752691697607`*^9, 3.867675269449375*^9}, 
+   3.8676781302838717`*^9},
+ CellLabel->"In[20]:=",ExpressionUUID->"6b9476f5-b02e-4b99-964d-a2babe18e8b9"],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{3.8676752701577168`*^9, 3.869223805859289*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"a0587197-d0f2-44b2-bdde-eab8c70a9102"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2016"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867675275484273*^9, 3.867675275930274*^9}, 
+   3.867678130285488*^9},
+ CellLabel->"In[21]:=",ExpressionUUID->"bcdb661b-d14d-48e0-bf84-7f7c2345685c"],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{3.867675276830275*^9, 3.869223808213081*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"16f317d5-1a27-4e2d-bf45-1481d0402547"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2017"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867675281830455*^9, 3.867675282231052*^9}, 
+   3.867678130287127*^9},
+ CellLabel->"In[22]:=",ExpressionUUID->"4cc1001c-fbb8-48c3-814a-0342dccdc399"],
+
+Cell[BoxData["8"], "Output",
+ CellChangeTimes->{3.867675283598768*^9, 3.8692238102979918`*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"460f94ee-9e76-4ec7-b701-035d655ce51d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2018"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867675288696129*^9, 3.867675289191778*^9}, 
+   3.867678130288731*^9},
+ CellLabel->"In[23]:=",ExpressionUUID->"c9bcac74-0899-473e-93f6-c26a99ecab3a"],
+
+Cell[BoxData["12"], "Output",
+ CellChangeTimes->{3.867675289997031*^9, 3.867835909519981*^9, 
+  3.867838491598975*^9, 3.86784054469945*^9, 3.869223813293107*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"892935e3-f43f-4d1c-99e6-60bbb536d8bd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#IPOYear", " ", "\[Equal]", " ", "2019"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867675293707934*^9, 3.8676752941897163`*^9}, 
+   3.867678130290329*^9},
+ CellLabel->"In[68]:=",ExpressionUUID->"41b5cab7-ef8d-4523-babf-ca1248614dbd"],
+
+Cell[BoxData["9"], "Output",
+ CellChangeTimes->{3.867675295096778*^9, 3.86922381626318*^9, 
+  3.8692273289322853`*^9},
+ CellLabel->"Out[68]=",ExpressionUUID->"ff70ae91-d6cb-4275-b9ff-31daa18202b8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Distribution by Industry", "Subsection",
+ CellChangeTimes->{{3.867737803503892*^9, 
+  3.867737815452627*^9}},ExpressionUUID->"1c4e93e7-c242-4cd2-99e2-\
+e1023a89e81d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#Manufacturing", " ", "\[Equal]", " ", "1"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867737835337566*^9, 3.86773788132164*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"bd1f185e-a5c2-4dfe-a723-0c09866c1e6f"],
+
+Cell[BoxData["14"], "Output",
+ CellChangeTimes->{{3.867737861685341*^9, 3.867737882063216*^9}, 
+   3.867738127708929*^9, 3.8692239654082727`*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"99115878-699b-4032-8db9-7f58d813b716"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#ConsumerAndServices", " ", "\[Equal]", " ", "1"}], "&"}]}], 
+   "]"}], "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.867737898181445*^9, 3.867737933847172*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"d4e8eacb-a40d-4670-aad2-ea8e6a3596ca"],
+
+Cell[BoxData["12"], "Output",
+ CellChangeTimes->{3.867738130251697*^9, 3.869223968227502*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"efe1646b-f685-466e-a342-760c3b7d88d4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#FinanceInsuranceRealEstate", " ", "\[Equal]", " ", "1"}], 
+     "&"}]}], "]"}], "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.867738245101824*^9, 3.867738257577018*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"1c3ecd7d-84d7-4bcd-a9af-6a4776631174"],
+
+Cell[BoxData["5"], "Output",
+ CellChangeTimes->{3.8677382610536957`*^9, 3.869223977912614*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"a39f347f-1228-49ff-81c2-18a3225543e2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#Energy", " ", "\[Equal]", " ", "1"}], "&"}]}], "]"}], "//", 
+  "Length"}]], "Input",
+ CellChangeTimes->{{3.867738269760985*^9, 3.867738274446535*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"c4d88636-0f65-47d2-8ff7-8497a883b511"],
+
+Cell[BoxData["7"], "Output",
+ CellChangeTimes->{3.8677382751289062`*^9, 3.869223980769248*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"2198fb33-11ea-4271-9e9f-8c042fb38ff1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#HealthcarePharma", " ", "\[Equal]", " ", "1"}], "&"}]}], "]"}],
+   "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.867738282731682*^9, 3.867738291617958*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"cb936c4f-a2a9-46b0-8aca-75f475f7d957"],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{3.867738292360971*^9, 3.869223984407309*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"198c093b-eae1-4c49-a44a-ee64c632f5c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#TechnologySpace", " ", "\[Equal]", " ", "1"}], "&"}]}], "]"}], 
+  "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.867738296700839*^9, 3.867738310959485*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"c57ae392-998f-4497-9f57-855e76208ff5"],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{3.867738311527197*^9, 3.869223992909091*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"aeda2533-6db1-438e-8bd3-09b0f5e6a5a9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#ShippingStorage", " ", "\[Equal]", " ", "1"}], "&"}]}], "]"}], 
+  "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.867738320121378*^9, 3.867738328040822*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"1ae67a31-d4f4-40fc-bffe-734ffd3ed50e"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.86773832867127*^9, 3.869223995302079*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"f5b8671d-d412-44e0-99ba-c221b275a4f5"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.867738235458185*^9, 
+  3.867738235823744*^9}},ExpressionUUID->"ed02a4dc-027d-4483-a028-\
+4d3019483d86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sample deSPAC Performance", "Section",
+ CellChangeTimes->{{3.867678504062752*^9, 3.8676785374187603`*^9}, {
+  3.868688231459434*^9, 
+  3.8686882331864147`*^9}},ExpressionUUID->"a1412bf6-bbd8-4559-93a5-\
+eb4e987846b5"],
+
+Cell[CellGroupData[{
+
+Cell["absolut", "Subsection",
+ CellChangeTimes->{{3.8676800180594482`*^9, 
+  3.8676800239128447`*^9}},ExpressionUUID->"2028c380-c075-48d4-8f0a-\
+8dee26345c88"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mean", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<OneYearPerformance\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.867678553426447*^9, 3.867678566519109*^9}, {
+  3.867678598349985*^9, 3.867678657136529*^9}, {3.867678901692894*^9, 
+  3.867678906210363*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"288bb842-3e71-4091-b262-915a15cebd36"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.15054280608163265`"}]], "Output",
+ CellChangeTimes->{{3.8676786064409647`*^9, 3.867678626324263*^9}, 
+   3.867678658357736*^9, {3.867678881645433*^9, 3.867678906795887*^9}, 
+   3.8692240434533567`*^9},
+ CellLabel->"Out[32]=",ExpressionUUID->"1c2a9de9-e4c9-4783-9693-5efac86d5e9e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<OneYearPerformance\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.867678894419435*^9, 3.867678916296022*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"7c40323e-d6e2-46b7-984a-aa58509d4cea"],
+
+Cell[BoxData["1.350684856`"], "Output",
+ CellChangeTimes->{3.867678917862328*^9, 3.8692240588805*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"c56cb59f-7a9d-495a-b828-fa35b8203cec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Min", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<OneYearPerformance\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8676789266930847`*^9, 3.867678929693083*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"9d724f82-9007-434e-9cf8-794551f94625"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.965376121`"}]], "Output",
+ CellChangeTimes->{3.8676789306079273`*^9, 3.869224069930148*^9, 
+  3.869227516019403*^9},
+ CellLabel->"Out[75]=",ExpressionUUID->"2cabe2e5-7abc-48d8-bd70-c18efcecc297"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quartiles", "[", 
+  RowBox[{
+   RowBox[{"CrossSectionalData", "[", 
+    RowBox[{"All", ",", " ", "\"\<OneYearPerformance\>\""}], "]"}], "//", 
+   "Normal"}], "]"}]], "Input",
+ CellChangeTimes->{{3.867678967752207*^9, 3.8676789805342617`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"d17d5ec2-2d07-485d-818a-e88c8460cac1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "0.53895426225`"}], ",", 
+   RowBox[{"-", "0.177419355`"}], ",", "0.16675740475`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8676789742967443`*^9, 3.867678980993682*^9}, 
+   3.869224080230713*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"86ba8a1b-1db2-475f-b22a-680b7e5e9554"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["abnormal returns", "Subsection",
+ CellChangeTimes->{{3.867680038713456*^9, 
+  3.867680042051317*^9}},ExpressionUUID->"82c001f6-d378-4884-92fb-\
+e71a2c8545d4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mean", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<OneYearAR\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.867680047767666*^9, 3.867680078835432*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"54872e44-a7fb-48f4-b3ff-931b37d034eb"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.32170820979591847`"}]], "Output",
+ CellChangeTimes->{3.867680081554986*^9, 3.8692246106940203`*^9},
+ CellLabel->"Out[36]=",ExpressionUUID->"a35586b1-a1c2-4d6c-a94e-76904ff9901d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<OneYearAR\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.86768009934317*^9, 3.867680102187683*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"30c4b42d-d51c-40d1-9351-c6022245bbe2"],
+
+Cell[BoxData["1.083311834`"], "Output",
+ CellChangeTimes->{3.867680103365328*^9, 3.869224635638528*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"8a6c82a2-114a-42a9-9883-ac7492a52611"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Min", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<OneYearAR\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8676801040137863`*^9, 3.867680105570599*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"941697e1-5dbc-445d-a9f0-9100a6dde25f"],
+
+Cell[BoxData[
+ RowBox[{"-", "1.338205322`"}]], "Output",
+ CellChangeTimes->{3.8676801063280907`*^9, 3.8692246518181667`*^9, 
+  3.869227518735609*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"c5cfc2ab-1898-4027-97d6-3b3cbb5cfd44"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quartiles", "[", 
+  RowBox[{
+   RowBox[{"CrossSectionalData", "[", 
+    RowBox[{"All", ",", " ", "\"\<OneYearAR\>\""}], "]"}], "//", "Normal"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.867680119290608*^9, 3.867680128465004*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"3b7e21d4-3633-41d2-8775-23c2ce29abce"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "0.6911470325`"}], ",", 
+   RowBox[{"-", "0.31723706`"}], ",", 
+   RowBox[{"-", "0.0363681295`"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.867680123337336*^9, 3.8676801290143023`*^9}, 
+   3.869224662500152*^9},
+ CellLabel->"Out[39]=",ExpressionUUID->"586899b6-1f49-4b81-bd0a-78ee4980b1b7"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["SPACs with a positive performance", "Subsection",
+ CellChangeTimes->{{3.867682805650299*^9, 
+  3.867682860401298*^9}},ExpressionUUID->"3ef70f29-bdf0-45d2-9c2b-\
+29dc4c6e85ac"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#OneYearPerformance", " ", ">", " ", "0"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.8676820785871687`*^9, 3.8676821406605797`*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"cd6caafb-d2ad-4164-b02a-1c2aa98cd1a9"],
+
+Cell[BoxData["16"], "Output",
+ CellChangeTimes->{{3.8676821194817467`*^9, 3.8676821415437813`*^9}, 
+   3.8692247460835648`*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"c24a32cd-856e-4bc7-81ec-2054524e5ff2"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["SPACs outperforming the Russell 2000", "Subsection",
+ CellChangeTimes->{{3.86768287198495*^9, 
+  3.867682879487598*^9}},ExpressionUUID->"8bf6d94e-9c6c-4258-9c00-\
+95b2acd4ffde"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#OneYearAR", " ", ">", " ", "0"}], "&"}]}], "]"}], "//", 
+  "Length"}]], "Input",
+ CellChangeTimes->{{3.867682322431419*^9, 3.86768234651193*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"5d55e351-d18a-4a0c-9d72-c9d24012dc9b"],
+
+Cell[BoxData["11"], "Output",
+ CellChangeTimes->{{3.8676823393121967`*^9, 3.8676823471169577`*^9}, 
+   3.869224783822475*^9},
+ CellLabel->"Out[41]=",ExpressionUUID->"97c18733-1149-4c25-b004-682742ab9374"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Sample IPO performance", "Section"]], "Section",
+ CellChangeTimes->{{3.868688241301556*^9, 3.868688254156851*^9}, {
+  3.8686910672011633`*^9, 
+  3.8686910692965107`*^9}},ExpressionUUID->"43bddd76-9132-4f17-8e21-\
+5d184e296341"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"SPAC", " ", "period", " ", "returns"}], "Subsubsection",
+  FontWeight->"Plain"]], "Input",
+ CellChangeTimes->{{3.8686919547544117`*^9, 
+  3.868691954755282*^9}},ExpressionUUID->"26ceb0c3-89d5-4d86-a8fe-\
+e099d6cdf321"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mean", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<SPACPeriodReturn\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.868691095321958*^9, 3.868691128222971*^9}, {
+  3.86922500606621*^9, 3.869225009976446*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"82c54df6-d582-4cad-a217-5f401f9a9eec"],
+
+Cell[BoxData["0.3750204081632653`"], "Output",
+ CellChangeTimes->{3.868691128638393*^9, 3.8692250114591637`*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"339116f2-de7c-48c7-8f98-ae49bd6089f8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quartiles", "[", 
+  RowBox[{
+   RowBox[{"CrossSectionalData", "[", 
+    RowBox[{"All", ",", " ", "\"\<SPACPeriodReturn\>\""}], "]"}], "//", 
+   "Normal"}], "]"}]], "Input",
+ CellChangeTimes->{{3.868691451344084*^9, 3.868691475989506*^9}, {
+  3.869225069263316*^9, 3.869225074997291*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"0b3acea4-7209-4cd7-bdec-b5fc1ac8fc11"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.00375`", ",", "0.041`", ",", "0.42500000000000004`"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.8686914703592978`*^9, 3.868691476437661*^9}, 
+   3.868691674706894*^9, 3.8692250757294703`*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"c7b3c7a5-c239-4c1c-8f4b-60637c38c5f3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Min", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<SPACPeriodReturn\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8686916989542217`*^9, 3.868691712713283*^9}, {
+  3.869225126871571*^9, 3.869225131878499*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"1057059d-c433-4511-a2fb-21e19c50493f"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.167`"}]], "Output",
+ CellChangeTimes->{3.86869171319473*^9, 3.8692251327676773`*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"e57bcc41-c6fe-47ea-aef3-bd0ed847fa07"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<SPACPeriodReturn\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.868691713809518*^9, 3.868691729403729*^9}, {
+  3.869225149624505*^9, 3.8692251529990253`*^9}, {3.8692251871513987`*^9, 
+  3.869225188910701*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"49c40d5d-62f4-45f0-9eab-511d429f7cbb"],
+
+Cell[BoxData["3.752`"], "Output",
+ CellChangeTimes->{3.868691729827518*^9, 3.869225189567781*^9, 
+  3.869227522241845*^9},
+ CellLabel->"Out[77]=",ExpressionUUID->"14478e0e-3193-4d6d-a77d-03179aae0505"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["SPAC period abnormal returns", "Subsubsection",
+ CellChangeTimes->{{3.8692258599631777`*^9, 
+  3.8692258672006187`*^9}},ExpressionUUID->"77bdfb41-1c80-47f6-ad44-\
+b33510c65879"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mean", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<SPACPeriodAR\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.869225871840522*^9, 3.869225889654976*^9}},
+ CellLabel->"In[52]:=",ExpressionUUID->"e2362698-3684-4337-8ed7-8d64223fd992"],
+
+Cell[BoxData["0.2220621265306122`"], "Output",
+ CellChangeTimes->{3.869225890519141*^9},
+ CellLabel->"Out[52]=",ExpressionUUID->"f1cef05e-0c22-4500-aa14-b2f4b6551588"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quartiles", "[", 
+  RowBox[{
+   RowBox[{"CrossSectionalData", "[", 
+    RowBox[{"All", ",", " ", "\"\<SPACPeriodAR\>\""}], "]"}], "//", 
+   "Normal"}], "]"}]], "Input",
+ CellChangeTimes->{{3.869225902214274*^9, 3.86922591505513*^9}},
+ CellLabel->"In[54]:=",ExpressionUUID->"4078359f-d844-4838-8f87-f3c2d372d6de"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "0.195318942`"}], ",", 
+   RowBox[{"-", "0.02301907`"}], ",", "0.27483604125`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.869225910216097*^9, 3.869225915504603*^9}},
+ CellLabel->"Out[54]=",ExpressionUUID->"2e4c2fef-5d91-4217-bafd-cba98815cc54"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Min", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<SPACPeriodAR\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8692259192471523`*^9, 3.869225922995274*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"ed025500-8ba6-42ed-aa86-4b90cb5d6aa9"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.56873043`"}]], "Output",
+ CellChangeTimes->{3.869225923863164*^9},
+ CellLabel->"Out[55]=",ExpressionUUID->"78bdaa36-1aaf-4796-a139-6a153beb0c41"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<SPACPeriodAR\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.869225924813195*^9, 3.869225928353079*^9}},
+ CellLabel->"In[56]:=",ExpressionUUID->"4f1b277e-d634-4b21-9554-30f951b92b26"],
+
+Cell[BoxData["3.779590897`"], "Output",
+ CellChangeTimes->{3.86922592930534*^9},
+ CellLabel->"Out[56]=",ExpressionUUID->"3c3c1917-9888-4513-8863-dfda2a761002"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["IPO to one-year post-merger return", "Subsubsection",
+ CellChangeTimes->{{3.868691968492577*^9, 
+  3.8686919817511683`*^9}},ExpressionUUID->"6e799040-ee2a-45e4-bd6b-\
+1b6fef6ecd03"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mean", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<IPOtoDeSPACReturn\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.868694743335679*^9, 3.868694748082691*^9}, {
+  3.869225471069241*^9, 3.869225511426426*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"39aa5298-fc70-4f09-a141-f8b8c2944005"],
+
+Cell[BoxData["0.003221183673469393`"], "Output",
+ CellChangeTimes->{3.869225512418292*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"0a6ab4de-2406-43ef-9dd1-e03cf219353c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quartiles", "[", 
+  RowBox[{
+   RowBox[{"CrossSectionalData", "[", 
+    RowBox[{"All", ",", " ", "\"\<IPOtoDeSPACReturn\>\""}], "]"}], "//", 
+   "Normal"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8686947619356203`*^9, 3.8686947664170933`*^9}, {
+  3.869225465755741*^9, 3.8692254673247232`*^9}, {3.8692255378991833`*^9, 
+  3.86922556014718*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"f70f19ee-81aa-4d95-b12d-204062fbfcc6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "0.35924999999999996`"}], ",", 
+   RowBox[{"-", "0.088`"}], ",", "0.418`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.869225553315958*^9, 3.8692255608625402`*^9}},
+ CellLabel->"Out[49]=",ExpressionUUID->"ae90219f-0346-447a-98c8-2cdadf7a8379"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<IPOtoDeSPACReturn\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8686947677541933`*^9, 3.868694772400989*^9}, {
+  3.869225654349773*^9, 3.869225675561809*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"4c6c63e8-156d-4353-a413-c70879e01b0e"],
+
+Cell[BoxData["1.373148`"], "Output",
+ CellChangeTimes->{3.869225675919684*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"fb896298-2b9d-4885-8647-85cd90495bf6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Min", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<IPOtoDeSPACReturn\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.868694773453145*^9, 3.868694780034617*^9}, {
+  3.869225698996387*^9, 3.8692257165783043`*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"b62c09a3-ac79-40aa-aed7-94987a057b9b"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.94983`"}]], "Output",
+ CellChangeTimes->{3.8686947808501043`*^9, 3.869225718197351*^9},
+ CellLabel->"Out[51]=",ExpressionUUID->"cb8c0c5f-dfc7-4e00-a6ff-89d7c5d3350a"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["IPO to one-year post-merger abnormal returns", "Subsubsection",
+ CellChangeTimes->{{3.8692267038219748`*^9, 
+  3.869226720822156*^9}},ExpressionUUID->"1e284f3f-a7c4-4e8c-a00e-\
+78abaa6b76dc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mean", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<IPOtoDeSPACAR\>\""}], "]"}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.869226724636565*^9, 3.869226747186305*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"b45559bc-5df1-4dca-bcd6-5dd2f46d7101"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.3271373511020408`"}]], "Output",
+ CellChangeTimes->{3.8692267482073298`*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"d0b215d6-1d12-4da6-9892-1807f4304c09"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quartiles", "[", 
+  RowBox[{
+   RowBox[{"CrossSectionalData", "[", 
+    RowBox[{"All", ",", " ", "\"\<IPOtoDeSPACAR\>\""}], "]"}], "//", 
+   "Normal"}], "]"}]], "Input",
+ CellChangeTimes->{{3.869226756488615*^9, 3.869226764367865*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"7b88aa97-b13a-4d56-95b9-7353328515ac"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "0.7283175925`"}], ",", 
+   RowBox[{"-", "0.453671197`"}], ",", "0.0461653985`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8692267600552063`*^9, 3.869226764753434*^9}},
+ CellLabel->"Out[59]=",ExpressionUUID->"c2adddf0-da24-47a4-8368-61333ab6055e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<IPOtoDeSPACAR\>\""}], "]"}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.8692267674949293`*^9, 3.869226772141873*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"21439160-905b-4264-ad38-870a42713895"],
+
+Cell[BoxData["0.895419923`"], "Output",
+ CellChangeTimes->{3.86922677329291*^9},
+ CellLabel->"Out[60]=",ExpressionUUID->"07684f92-750a-42dd-9051-e88b62766a7d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Min", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<IPOtoDeSPACAR\>\""}], "]"}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.8692267744312*^9, 3.869226776086589*^9}},
+ CellLabel->"In[61]:=",ExpressionUUID->"aea2b13b-8b55-46ca-b8a2-71dff6c36f4b"],
+
+Cell[BoxData[
+ RowBox[{"-", "1.230384552`"}]], "Output",
+ CellChangeTimes->{3.869226776924139*^9},
+ CellLabel->"Out[61]=",ExpressionUUID->"e1965dcc-5101-4ff1-b6cd-c471beb3116d"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sponsor ownership statistics", "Section",
+ CellChangeTimes->{{3.867925464004369*^9, 
+  3.8679254704188623`*^9}},ExpressionUUID->"29c4213a-bf77-42b5-893e-\
+08f93dc9d493"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#SponsorOwnership", " ", "<", "0.2"}], "&"}]}], "]"}], "//", 
+  "Length"}]], "Input",
+ CellChangeTimes->{{3.867925479729294*^9, 3.867925517442795*^9}, 
+   3.869227277336948*^9, {3.86922733990224*^9, 3.8692273622744713`*^9}, {
+   3.8692275373517523`*^9, 3.869227539070572*^9}},
+ CellLabel->"In[79]:=",ExpressionUUID->"a24947a6-eedc-4c6d-b730-114a91a779d6"],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{{3.867925507089911*^9, 3.867925518223605*^9}, 
+   3.869227246787366*^9, 3.869227278567573*^9, 3.86922736408959*^9, {
+   3.869227526395157*^9, 3.869227539683364*^9}},
+ CellLabel->"Out[79]=",ExpressionUUID->"37f3d66c-db81-4da8-8866-5f1b257b6f01"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#SponsorOwnership", " ", "\[Equal]", " ", "0.2"}], "&"}]}], 
+   "]"}], "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.867925533344089*^9, 3.867925549966227*^9}},
+ CellLabel->"In[80]:=",ExpressionUUID->"840c604c-181d-4282-9e99-9be91902c1e6"],
+
+Cell[BoxData["19"], "Output",
+ CellChangeTimes->{3.8679255504895267`*^9, 3.869227253793529*^9, 
+  3.86922754330221*^9},
+ CellLabel->"Out[80]=",ExpressionUUID->"4336c07a-2902-446f-9eb9-055815e00a24"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#SponsorOwnership", " ", ">", " ", "0.2"}], "&"}]}], "]"}], "//",
+   "Length"}]], "Input",
+ CellChangeTimes->{{3.867925587243519*^9, 3.8679256185003853`*^9}},
+ CellLabel->"In[81]:=",ExpressionUUID->"aa7b54a0-1981-457f-806d-b5ffbbf72b33"],
+
+Cell[BoxData["24"], "Output",
+ CellChangeTimes->{{3.867925606235786*^9, 3.867925619187438*^9}, 
+   3.869227256213339*^9, 3.869227545453463*^9},
+ CellLabel->"Out[81]=",ExpressionUUID->"2771a155-97f8-4b0a-9dc7-2920eb9e29d8"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Pro-rata Value in trust", "Section",
+ CellChangeTimes->{{3.867927461857564*^9, 
+  3.8679274672352*^9}},ExpressionUUID->"7702e3de-57cc-4aac-89d5-4d7711e35741"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<extraCashInTrust\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.867927470494885*^9, 3.867927552951515*^9}},
+ CellLabel->"In[82]:=",ExpressionUUID->"f6c44134-3c63-42b6-9667-964f3e8fcc9a"],
+
+Cell[BoxData["1.02`"], "Output",
+ CellChangeTimes->{3.8679275533354597`*^9, 3.8692276389738207`*^9},
+ CellLabel->"Out[82]=",ExpressionUUID->"e7491537-524b-48b4-9663-ad76e2c09bf9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Min", "[", 
+  RowBox[{"CrossSectionalData", "[", 
+   RowBox[{"All", ",", " ", "\"\<extraCashInTrust\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8679275845098543`*^9, 3.867927595950049*^9}},
+ CellLabel->"In[83]:=",ExpressionUUID->"1d7f96ee-bc51-43b5-86fd-eb0a2453b309"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.05`"}]], "Output",
+ CellChangeTimes->{3.867927596277563*^9, 3.8692276454759283`*^9},
+ CellLabel->"Out[83]=",ExpressionUUID->"1def93c7-f5ff-4ff0-b40f-dc4bb96762a1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rights", "Section",
+ CellChangeTimes->{{3.867928437980604*^9, 
+  3.867928438541337*^9}},ExpressionUUID->"c5e769f3-e63a-4279-952a-\
+113e521a4cfa"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#Rights", " ", "\[Equal]", " ", "1"}], "&"}]}], "]"}], "//", 
+  "Length"}]], "Input",
+ CellChangeTimes->{{3.867928442858119*^9, 3.867928485393894*^9}},
+ CellLabel->"In[84]:=",ExpressionUUID->"e472f13c-f188-4d3d-b336-fec7683cd9ad"],
+
+Cell[BoxData["8"], "Output",
+ CellChangeTimes->{{3.867928467662753*^9, 3.867928485944525*^9}, 
+   3.869227654290642*^9},
+ CellLabel->"Out[84]=",ExpressionUUID->"6e431c73-7726-4eee-9b8e-049aa7248193"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Good-/Bad-SPACs", "Section",
+ CellChangeTimes->{{3.8679355351254253`*^9, 
+  3.867935541505831*^9}},ExpressionUUID->"b9b95819-2619-4d0a-9653-\
+693fd5193a81"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NoGood", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"Select", "[", 
+    RowBox[{"CrossSectionalData", ",", " ", 
+     RowBox[{
+      RowBox[{"#preVoteShareOverCash", " ", ">", "0"}], "&"}]}], "]"}], "//", 
+   "Length"}]}]], "Input",
+ CellChangeTimes->{{3.867935545663157*^9, 3.8679355911655416`*^9}, {
+  3.869227710497513*^9, 3.869227714652624*^9}},
+ CellLabel->"In[85]:=",ExpressionUUID->"53af01ab-e0e5-4529-a0cd-29d2b392bdfc"],
+
+Cell[BoxData["31"], "Output",
+ CellChangeTimes->{{3.867935584885167*^9, 3.867935591761675*^9}, 
+   3.869227717169626*^9},
+ CellLabel->"Out[85]=",ExpressionUUID->"e835e19d-ba96-4575-a1b8-bbec7c864752"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NoBad", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"Select", "[", 
+    RowBox[{"CrossSectionalData", ",", " ", 
+     RowBox[{
+      RowBox[{"#preVoteShareOverCash", " ", "<", " ", "0"}], "&"}]}], "]"}], "//",
+    "Length"}]}]], "Input",
+ CellChangeTimes->{{3.867935595502544*^9, 3.8679356182612963`*^9}, {
+  3.869227720497099*^9, 3.869227726606277*^9}},
+ CellLabel->"In[86]:=",ExpressionUUID->"e0713297-c373-441a-8c02-5aae30307eab"],
+
+Cell[BoxData["16"], "Output",
+ CellChangeTimes->{{3.867935613073329*^9, 3.867935619006824*^9}, 
+   3.8692277293981752`*^9},
+ CellLabel->"Out[86]=",ExpressionUUID->"4a9d6ebd-8287-439c-80d9-a86cba0645e6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{"CrossSectionalData", ",", " ", 
+    RowBox[{
+     RowBox[{"#preVoteShareOverCash", " ", "\[Equal]", " ", "0"}], "&"}]}], 
+   "]"}], "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.8679356242918167`*^9, 3.8679356430755243`*^9}},
+ CellLabel->"In[87]:=",ExpressionUUID->"f5c518d2-c3fc-4089-9699-b08e81065e57"],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.867935643727704*^9, 3.869227734417179*^9},
+ CellLabel->"Out[87]=",ExpressionUUID->"ec4dad25-40ab-4198-8368-278fffc93c3a"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1874, 1336},
+WindowMargins->{{-1962, Automatic}, {-1381, Automatic}},
+Magnification:>1.25 Inherited,
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"19e049a5-39fd-4d0e-9049-c0c61b3fe19e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 163, 3, 123, "Title",ExpressionUUID->"0ff1cef8-cfcb-429b-90ff-e5d5ea8416c2"],
+Cell[746, 27, 56075, 864, 62, "Input",ExpressionUUID->"561e5969-996f-40e7-9c64-b9c1c66dc1ce",
+ InitializationCell->True],
+Cell[56824, 893, 199, 3, 40, "Item",ExpressionUUID->"e4f07a5a-a37f-4e76-860e-659fd3dd73ee"],
+Cell[57026, 898, 218, 3, 40, "Item",ExpressionUUID->"68b21313-3fdc-4363-a279-314761040565"],
+Cell[57247, 903, 219, 3, 40, "Item",ExpressionUUID->"52f1e295-e4ac-4865-a7e2-734e0767dfa3"],
+Cell[57469, 908, 195, 3, 40, "Item",ExpressionUUID->"d445acb4-239b-42a4-8ec4-7a345a9454ed"],
+Cell[57667, 913, 193, 3, 40, "Item",ExpressionUUID->"8d00ee97-978b-4383-a72c-420d692ac9aa"],
+Cell[57863, 918, 196, 3, 40, "Item",ExpressionUUID->"77e923b4-c1a2-4b17-b488-4ab6b51ee962"],
+Cell[58062, 923, 221, 5, 40, "Item",ExpressionUUID->"0b5a5f61-32c3-489d-83d1-49efd794a805"],
+Cell[58286, 930, 346, 7, 40, "Item",ExpressionUUID->"12d6561a-4494-40ae-80e8-f69a5682c915"],
+Cell[58635, 939, 265, 6, 40, "Item",ExpressionUUID->"428993db-0dfb-4f84-917b-f8875e18a717"],
+Cell[58903, 947, 262, 6, 40, "Item",ExpressionUUID->"c596c762-4013-4982-8ee7-bab74167e67b"],
+Cell[59168, 955, 281, 6, 40, "Item",ExpressionUUID->"65bbad66-a1e6-45dd-a6ba-3180c0b1253f"],
+Cell[59452, 963, 214, 4, 40, "Item",ExpressionUUID->"82e64563-faa3-469a-9468-1d5f6b7d4a65"],
+Cell[59669, 969, 221, 5, 40, "Item",ExpressionUUID->"945598f6-f0d9-428b-b0ad-29286bf8bcaf"],
+Cell[59893, 976, 273, 6, 40, "Item",ExpressionUUID->"87194840-9fb3-4123-b38a-0425c496d9ec"],
+Cell[60169, 984, 279, 6, 40, "Item",ExpressionUUID->"b018506a-95ac-43fe-9ef0-f01e4ae8ba11"],
+Cell[60451, 992, 286, 7, 40, "Item",ExpressionUUID->"5d235486-6035-4197-9a17-d0ee11276598"],
+Cell[60740, 1001, 260, 6, 40, "Item",ExpressionUUID->"749b12e2-c070-4030-964c-b97635430834"],
+Cell[61003, 1009, 251, 6, 40, "Item",ExpressionUUID->"804dce74-f0ba-4df3-999b-230b87bda602"],
+Cell[61257, 1017, 235, 6, 40, "Item",ExpressionUUID->"d9a76166-6b9e-48ef-8674-999ecfe0ed5a"],
+Cell[61495, 1025, 224, 5, 40, "Item",ExpressionUUID->"a4d3c161-8093-461f-b1f8-753b2ed37cd3"],
+Cell[61722, 1032, 284, 7, 40, "Item",ExpressionUUID->"5d11f0ae-fd58-4ea2-84d8-eece0c9bc311"],
+Cell[62009, 1041, 300, 7, 40, "Item",ExpressionUUID->"7f76fd2b-0ee0-40d0-ad0d-1e1d50ca25ca"],
+Cell[62312, 1050, 298, 7, 40, "Item",ExpressionUUID->"961f5ba9-54ee-408d-a5c5-b83b19d8f525"],
+Cell[62613, 1059, 437, 8, 40, "Item",ExpressionUUID->"abf7556c-326c-4d99-ba57-ab8b09a77e95"],
+Cell[63053, 1069, 166, 3, 84, "Section",ExpressionUUID->"3e1fb587-4618-4fe2-b173-09197427fdf1"],
+Cell[CellGroupData[{
+Cell[63244, 1076, 201, 3, 60, "Subtitle",ExpressionUUID->"6ce60228-0962-4a17-b774-46d65231019e"],
+Cell[CellGroupData[{
+Cell[63470, 1083, 219, 3, 37, "Input",ExpressionUUID->"59bf5b3e-648e-4f02-b434-bd7b0e6c6d82"],
+Cell[63692, 1088, 385, 5, 42, "Output",ExpressionUUID->"18f281eb-df8e-449c-8ce9-8c2fbc08ba2c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[64114, 1098, 795, 14, 37, "Input",ExpressionUUID->"012ce493-6fa3-44e3-bef1-56daebfb7391"],
+Cell[64912, 1114, 370, 6, 42, "Output",ExpressionUUID->"3da842a2-1a28-4df1-afe4-4f7ad942c1a6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65319, 1125, 382, 9, 37, "Input",ExpressionUUID->"c36984aa-9a07-4779-915c-c1ddd1a13455"],
+Cell[65704, 1136, 247, 3, 42, "Output",ExpressionUUID->"6e341f5e-d6ea-466d-923f-d92a21ca4e80"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65988, 1144, 385, 9, 37, "Input",ExpressionUUID->"3af259e2-b08a-4d54-ae29-59192f86232d"],
+Cell[66376, 1155, 201, 3, 42, "Output",ExpressionUUID->"6e4169f6-9602-4511-9261-26b1bd7f74a5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66614, 1163, 383, 9, 37, "Input",ExpressionUUID->"c6344326-ac5d-4fe5-8e65-3d0b84f1d24c"],
+Cell[67000, 1174, 225, 3, 42, "Output",ExpressionUUID->"ac43fd4a-d38c-462b-9b35-a08787c2cdc1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67262, 1182, 385, 9, 37, "Input",ExpressionUUID->"be99a20a-ed0b-4ba6-a816-86a45a0cea89"],
+Cell[67650, 1193, 195, 3, 42, "Output",ExpressionUUID->"e0b62f79-6b6f-4a4d-b8ed-04469fe1e319"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67882, 1201, 385, 9, 37, "Input",ExpressionUUID->"6b9476f5-b02e-4b99-964d-a2babe18e8b9"],
+Cell[68270, 1212, 173, 2, 42, "Output",ExpressionUUID->"a0587197-d0f2-44b2-bdde-eab8c70a9102"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68480, 1219, 381, 9, 37, "Input",ExpressionUUID->"bcdb661b-d14d-48e0-bf84-7f7c2345685c"],
+Cell[68864, 1230, 171, 2, 42, "Output",ExpressionUUID->"16f317d5-1a27-4e2d-bf45-1481d0402547"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69072, 1237, 381, 9, 37, "Input",ExpressionUUID->"4cc1001c-fbb8-48c3-814a-0342dccdc399"],
+Cell[69456, 1248, 173, 2, 42, "Output",ExpressionUUID->"460f94ee-9e76-4ec7-b701-035d655ce51d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69666, 1255, 381, 9, 37, "Input",ExpressionUUID->"c9bcac74-0899-473e-93f6-c26a99ecab3a"],
+Cell[70050, 1266, 240, 3, 42, "Output",ExpressionUUID->"892935e3-f43f-4d1c-99e6-60bbb536d8bd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70327, 1274, 383, 9, 37, "Input",ExpressionUUID->"41b5cab7-ef8d-4523-babf-ca1248614dbd"],
+Cell[70713, 1285, 197, 3, 42, "Output",ExpressionUUID->"ff70ae91-d6cb-4275-b9ff-31daa18202b8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70947, 1293, 172, 3, 67, "Subsection",ExpressionUUID->"1c4e93e7-c242-4cd2-99e2-e1023a89e81d"],
+Cell[CellGroupData[{
+Cell[71144, 1300, 357, 8, 37, "Input",ExpressionUUID->"bd1f185e-a5c2-4dfe-a723-0c09866c1e6f"],
+Cell[71504, 1310, 224, 3, 42, "Output",ExpressionUUID->"99115878-699b-4032-8db9-7f58d813b716"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[71765, 1318, 365, 8, 37, "Input",ExpressionUUID->"d4e8eacb-a40d-4670-aad2-ea8e6a3596ca"],
+Cell[72133, 1328, 172, 2, 42, "Output",ExpressionUUID->"efe1646b-f685-466e-a342-760c3b7d88d4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72342, 1335, 374, 8, 37, "Input",ExpressionUUID->"1c3ecd7d-84d7-4bcd-a9af-6a4776631174"],
+Cell[72719, 1345, 173, 2, 42, "Output",ExpressionUUID->"a39f347f-1228-49ff-81c2-18a3225543e2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72929, 1352, 351, 8, 37, "Input",ExpressionUUID->"c4d88636-0f65-47d2-8ff7-8497a883b511"],
+Cell[73283, 1362, 173, 2, 42, "Output",ExpressionUUID->"2198fb33-11ea-4271-9e9f-8c042fb38ff1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73493, 1369, 361, 8, 37, "Input",ExpressionUUID->"cb936c4f-a2a9-46b0-8aca-75f475f7d957"],
+Cell[73857, 1379, 171, 2, 42, "Output",ExpressionUUID->"198c093b-eae1-4c49-a44a-ee64c632f5c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74065, 1386, 360, 8, 37, "Input",ExpressionUUID->"c57ae392-998f-4497-9f57-855e76208ff5"],
+Cell[74428, 1396, 171, 2, 42, "Output",ExpressionUUID->"aeda2533-6db1-438e-8bd3-09b0f5e6a5a9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74636, 1403, 360, 8, 37, "Input",ExpressionUUID->"1ae67a31-d4f4-40fc-bffe-734ffd3ed50e"],
+Cell[74999, 1413, 170, 2, 42, "Output",ExpressionUUID->"f5b8671d-d412-44e0-99ba-c221b275a4f5"]
+}, Open  ]],
+Cell[75184, 1418, 152, 3, 37, "Input",ExpressionUUID->"ed02a4dc-027d-4483-a028-4d3019483d86"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75373, 1426, 223, 4, 84, "Section",ExpressionUUID->"a1412bf6-bbd8-4559-93a5-eb4e987846b5"],
+Cell[CellGroupData[{
+Cell[75621, 1434, 159, 3, 67, "Subsection",ExpressionUUID->"2028c380-c075-48d4-8f0a-8dee26345c88"],
+Cell[CellGroupData[{
+Cell[75805, 1441, 404, 8, 37, "Input",ExpressionUUID->"288bb842-3e71-4091-b262-915a15cebd36"],
+Cell[76212, 1451, 311, 5, 42, "Output",ExpressionUUID->"1c2a9de9-e4c9-4783-9693-5efac86d5e9e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76560, 1461, 305, 6, 37, "Input",ExpressionUUID->"7c40323e-d6e2-46b7-984a-aa58509d4cea"],
+Cell[76868, 1469, 180, 2, 42, "Output",ExpressionUUID->"c56cb59f-7a9d-495a-b828-fa35b8203cec"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77085, 1476, 307, 6, 37, "Input",ExpressionUUID->"9d724f82-9007-434e-9cf8-794551f94625"],
+Cell[77395, 1484, 226, 4, 42, "Output",ExpressionUUID->"2cabe2e5-7abc-48d8-bd70-c18efcecc297"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77658, 1493, 345, 7, 37, "Input",ExpressionUUID->"d17d5ec2-2d07-485d-818a-e88c8460cac1"],
+Cell[78006, 1502, 331, 7, 42, "Output",ExpressionUUID->"86ba8a1b-1db2-475f-b22a-680b7e5e9554"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[78386, 1515, 164, 3, 67, "Subsection",ExpressionUUID->"82c001f6-d378-4884-92fb-e71a2c8545d4"],
+Cell[CellGroupData[{
+Cell[78575, 1522, 294, 5, 37, "Input",ExpressionUUID->"54872e44-a7fb-48f4-b3ff-931b37d034eb"],
+Cell[78872, 1529, 209, 3, 42, "Output",ExpressionUUID->"a35586b1-a1c2-4d6c-a94e-76904ff9901d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[79118, 1537, 292, 5, 37, "Input",ExpressionUUID->"30c4b42d-d51c-40d1-9351-c6022245bbe2"],
+Cell[79413, 1544, 182, 2, 42, "Output",ExpressionUUID->"8a6c82a2-114a-42a9-9883-ac7492a52611"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[79632, 1551, 295, 5, 37, "Input",ExpressionUUID->"941697e1-5dbc-445d-a9f0-9100a6dde25f"],
+Cell[79930, 1558, 228, 4, 42, "Output",ExpressionUUID->"c5cfc2ab-1898-4027-97d6-3b3cbb5cfd44"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[80195, 1567, 333, 7, 37, "Input",ExpressionUUID->"3b7e21d4-3633-41d2-8775-23c2ce29abce"],
+Cell[80531, 1576, 347, 8, 42, "Output",ExpressionUUID->"586899b6-1f49-4b81-bd0a-78ee4980b1b7"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[80927, 1590, 181, 3, 67, "Subsection",ExpressionUUID->"3ef70f29-bdf0-45d2-9c2b-29dc4c6e85ac"],
+Cell[CellGroupData[{
+Cell[81133, 1597, 360, 8, 37, "Input",ExpressionUUID->"cd6caafb-d2ad-4164-b02a-1c2aa98cd1a9"],
+Cell[81496, 1607, 206, 3, 42, "Output",ExpressionUUID->"c24a32cd-856e-4bc7-81ec-2054524e5ff2"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[81751, 1616, 183, 3, 67, "Subsection",ExpressionUUID->"8bf6d94e-9c6c-4258-9c00-95b2acd4ffde"],
+Cell[CellGroupData[{
+Cell[81959, 1623, 346, 8, 37, "Input",ExpressionUUID->"5d55e351-d18a-4a0c-9d72-c9d24012dc9b"],
+Cell[82308, 1633, 204, 3, 42, "Output",ExpressionUUID->"97c18733-1149-4c25-b004-682742ab9374"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82573, 1643, 251, 4, 84, "Section",ExpressionUUID->"43bddd76-9132-4f17-8e21-5d184e296341"],
+Cell[82827, 1649, 254, 6, 47, "Input",ExpressionUUID->"26ceb0c3-89d5-4d86-a8fe-e099d6cdf321"],
+Cell[CellGroupData[{
+Cell[83106, 1659, 352, 7, 37, "Input",ExpressionUUID->"82c54df6-d582-4cad-a217-5f401f9a9eec"],
+Cell[83461, 1668, 191, 2, 42, "Output",ExpressionUUID->"339116f2-de7c-48c7-8f98-ae49bd6089f8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83689, 1675, 390, 8, 37, "Input",ExpressionUUID->"0b3acea4-7209-4cd7-bdec-b5fc1ac8fc11"],
+Cell[84082, 1685, 314, 6, 42, "Output",ExpressionUUID->"c7b3c7a5-c239-4c1c-8f4b-60637c38c5f3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84433, 1696, 354, 7, 37, "Input",ExpressionUUID->"1057059d-c433-4511-a2fb-21e19c50493f"],
+Cell[84790, 1705, 194, 3, 42, "Output",ExpressionUUID->"e57bcc41-c6fe-47ea-aef3-bd0ed847fa07"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85021, 1713, 405, 8, 37, "Input",ExpressionUUID->"49c40d5d-62f4-45f0-9eab-511d429f7cbb"],
+Cell[85429, 1723, 201, 3, 42, "Output",ExpressionUUID->"14478e0e-3193-4d6d-a77d-03179aae0505"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85667, 1731, 183, 3, 56, "Subsubsection",ExpressionUUID->"77bdfb41-1c80-47f6-ad44-b33510c65879"],
+Cell[CellGroupData[{
+Cell[85875, 1738, 297, 5, 37, "Input",ExpressionUUID->"e2362698-3684-4337-8ed7-8d64223fd992"],
+Cell[86175, 1745, 167, 2, 42, "Output",ExpressionUUID->"f1cef05e-0c22-4500-aa14-b2f4b6551588"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[86379, 1752, 336, 7, 37, "Input",ExpressionUUID->"4078359f-d844-4838-8f87-f3c2d372d6de"],
+Cell[86718, 1761, 300, 6, 42, "Output",ExpressionUUID->"2e4c2fef-5d91-4217-bafd-cba98815cc54"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[87055, 1772, 298, 5, 37, "Input",ExpressionUUID->"ed025500-8ba6-42ed-aa86-4b90cb5d6aa9"],
+Cell[87356, 1779, 176, 3, 42, "Output",ExpressionUUID->"78bdaa36-1aaf-4796-a139-6a153beb0c41"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[87569, 1787, 296, 5, 37, "Input",ExpressionUUID->"4f1b277e-d634-4b21-9554-30f951b92b26"],
+Cell[87868, 1794, 159, 2, 42, "Output",ExpressionUUID->"3c3c1917-9888-4513-8863-dfda2a761002"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[88076, 1802, 187, 3, 56, "Subsubsection",ExpressionUUID->"6e799040-ee2a-45e4-bd6b-1b6fef6ecd03"],
+Cell[CellGroupData[{
+Cell[88288, 1809, 354, 7, 37, "Input",ExpressionUUID->"39aa5298-fc70-4f09-a141-f8b8c2944005"],
+Cell[88645, 1818, 169, 2, 42, "Output",ExpressionUUID->"0a6ab4de-2406-43ef-9dd1-e03cf219353c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[88851, 1825, 447, 9, 37, "Input",ExpressionUUID->"f70f19ee-81aa-4d95-b12d-204062fbfcc6"],
+Cell[89301, 1836, 297, 6, 42, "Output",ExpressionUUID->"ae90219f-0346-447a-98c8-2cdadf7a8379"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[89635, 1847, 355, 7, 37, "Input",ExpressionUUID->"4c6c63e8-156d-4353-a413-c70879e01b0e"],
+Cell[89993, 1856, 157, 2, 42, "Output",ExpressionUUID->"fb896298-2b9d-4885-8647-85cd90495bf6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[90187, 1863, 355, 7, 37, "Input",ExpressionUUID->"b62c09a3-ac79-40aa-aed7-94987a057b9b"],
+Cell[90545, 1872, 197, 3, 42, "Output",ExpressionUUID->"cb8c0c5f-dfc7-4e00-a6ff-89d7c5d3350a"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[90791, 1881, 197, 3, 56, "Subsubsection",ExpressionUUID->"1e284f3f-a7c4-4e8c-a00e-78abaa6b76dc"],
+Cell[CellGroupData[{
+Cell[91013, 1888, 300, 6, 37, "Input",ExpressionUUID->"b45559bc-5df1-4dca-bcd6-5dd2f46d7101"],
+Cell[91316, 1896, 186, 3, 42, "Output",ExpressionUUID->"d0b215d6-1d12-4da6-9892-1807f4304c09"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91539, 1904, 338, 7, 37, "Input",ExpressionUUID->"7b88aa97-b13a-4d56-95b9-7353328515ac"],
+Cell[91880, 1913, 303, 6, 42, "Output",ExpressionUUID->"c2adddf0-da24-47a4-8368-61333ab6055e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[92220, 1924, 301, 6, 37, "Input",ExpressionUUID->"21439160-905b-4264-ad38-870a42713895"],
+Cell[92524, 1932, 159, 2, 42, "Output",ExpressionUUID->"07684f92-750a-42dd-9051-e88b62766a7d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[92720, 1939, 297, 6, 37, "Input",ExpressionUUID->"aea2b13b-8b55-46ca-b8a2-71dff6c36f4b"],
+Cell[93020, 1947, 177, 3, 42, "Output",ExpressionUUID->"e1965dcc-5101-4ff1-b6cd-c471beb3116d"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[93258, 1957, 175, 3, 84, "Section",ExpressionUUID->"29c4213a-bf77-42b5-893e-08f93dc9d493"],
+Cell[CellGroupData[{
+Cell[93458, 1964, 476, 10, 37, "Input",ExpressionUUID->"a24947a6-eedc-4c6d-b730-114a91a779d6"],
+Cell[93937, 1976, 292, 4, 42, "Output",ExpressionUUID->"37f3d66c-db81-4da8-8866-5f1b257b6f01"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[94266, 1985, 364, 8, 37, "Input",ExpressionUUID->"840c604c-181d-4282-9e99-9be91902c1e6"],
+Cell[94633, 1995, 198, 3, 42, "Output",ExpressionUUID->"4336c07a-2902-446f-9eb9-055815e00a24"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[94868, 2003, 358, 8, 37, "Input",ExpressionUUID->"aa7b54a0-1981-457f-806d-b5ffbbf72b33"],
+Cell[95229, 2013, 222, 3, 42, "Output",ExpressionUUID->"2771a155-97f8-4b0a-9dc7-2920eb9e29d8"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[95500, 2022, 164, 2, 84, "Section",ExpressionUUID->"7702e3de-57cc-4aac-89d5-4d7711e35741"],
+Cell[CellGroupData[{
+Cell[95689, 2028, 303, 6, 37, "Input",ExpressionUUID->"f6c44134-3c63-42b6-9667-964f3e8fcc9a"],
+Cell[95995, 2036, 179, 2, 42, "Output",ExpressionUUID->"e7491537-524b-48b4-9663-ad76e2c09bf9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[96211, 2043, 305, 6, 37, "Input",ExpressionUUID->"1d7f96ee-bc51-43b5-86fd-eb0a2453b309"],
+Cell[96519, 2051, 194, 3, 42, "Output",ExpressionUUID->"1def93c7-f5ff-4ff0-b40f-dc4bb96762a1"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[96762, 2060, 151, 3, 84, "Section",ExpressionUUID->"c5e769f3-e63a-4279-952a-113e521a4cfa"],
+Cell[CellGroupData[{
+Cell[96938, 2067, 351, 8, 37, "Input",ExpressionUUID->"e472f13c-f188-4d3d-b336-fec7683cd9ad"],
+Cell[97292, 2077, 199, 3, 42, "Output",ExpressionUUID->"6e431c73-7726-4eee-9b8e-049aa7248193"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[97540, 2086, 162, 3, 84, "Section",ExpressionUUID->"b9b95819-2619-4d0a-9653-693fd5193a81"],
+Cell[CellGroupData[{
+Cell[97727, 2093, 447, 10, 37, "Input",ExpressionUUID->"53af01ab-e0e5-4529-a0cd-29d2b392bdfc"],
+Cell[98177, 2105, 200, 3, 42, "Output",ExpressionUUID->"e835e19d-ba96-4575-a1b8-bbec7c864752"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[98414, 2113, 451, 10, 37, "Input",ExpressionUUID->"e0713297-c373-441a-8c02-5aae30307eab"],
+Cell[98868, 2125, 202, 3, 42, "Output",ExpressionUUID->"4a9d6ebd-8287-439c-80d9-a86cba0645e6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[99107, 2133, 370, 8, 37, "Input",ExpressionUUID->"f5c518d2-c3fc-4089-9699-b08e81065e57"],
+Cell[99480, 2143, 171, 2, 42, "Output",ExpressionUUID->"ec4dad25-40ab-4198-8368-278fffc93c3a"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
